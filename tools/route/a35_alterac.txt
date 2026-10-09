@@ -1,0 +1,12 @@
+ROUTE a35_alterac | Alterac Mountains | 35 | 36
+ZONE Alterac Mountains
+R 60.0,40.0 | Strahnbrad | Ride north from Arathi's west gate into the Alterac Mountains
+C 512 | Syndicate in and around Strahnbrad drop the signet rings
+C 500 | Crushridge ogres west of Strahnbrad drop the knucklebones
+
+ZONE Hillsbrad Foothills
+H Southshore
+T 512
+T 500
+A 504 @opt
+T 661 | Phin Odelic, if you finished the plague chain @opt

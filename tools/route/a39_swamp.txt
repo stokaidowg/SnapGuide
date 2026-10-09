@@ -1,0 +1,24 @@
+ROUTE a39_swamp | Swamp of Sorrows | 39 | 40
+ZONE Duskwood
+F Darkshire | From Thelsamar, fly to Darkshire
+
+ZONE Swamp of Sorrows
+# [[ The west: Watcher Biggs and the Lost Ones' camp ]]
+R 26.7,59.8 | Watcher Biggs | Ride east from Darkshire through Deadwind Pass: Biggs camps just inside the Swamp of Sorrows
+A 1396
+A 40029 | Magtoor, at the Lost Ones' camp in the Fallow Sanctuary, north of Biggs
+A 40028 | Har Na'lan, same camp
+A 40027 | Sanv K'la, same camp
+C 40027 | The Sanv Charm is in the Misty Valley, west of the camp
+C 1396 | Jaguars, spinners and young crocolisks in the western swamp
+T 40027
+
+# [[ The middle of the swamp ]]
+C 40029 | Lost One hunters and muckdwellers in the middle of the swamp
+C 40028 | The Horn of Garek'sa, north-east
+T 40029 | Back at the Lost Ones' camp
+T 40028
+A 40030 @opt
+C 40030 | Noboru the Cudgel wanders the middle of the swamp @opt
+T 40030 @opt
+T 1396 | Watcher Biggs

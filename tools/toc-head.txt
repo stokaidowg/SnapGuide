@@ -1,0 +1,13 @@
+## Interface: 11200
+## Title: |cff4fc3f7Snap|cffffffffGuide
+## Notes: Alliance levelling guide for OctoWoW: step by step routes built from the OctoWoW quest database, with an arrow, quest tracking and targeting.
+## Author: Stokaido
+## Version: 0.1
+## OptionalDeps: SnapUI, pfQuest
+## SavedVariablesPerCharacter: SnapGuideDB
+
+core.lua
+zones.lua
+Paths.lua
+ui.lua
+talents.lua

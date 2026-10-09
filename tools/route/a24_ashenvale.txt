@@ -1,0 +1,32 @@
+ROUTE a24_ashenvale | Ashenvale | 24 | 25
+ZONE Ashenvale
+T 1134
+T 1034 | Pelturas, while you're in Astranaar
+C 973 | Ilkrud Magthrull and his voidwalkers at the Fire Scar Shrine, south-west of Astranaar
+C 40120 | Ghostpaw Runners roam the woods around the Fire Scar Shrine
+T 973 | Delgren at Maestra's Post
+T 40120 | Ardaen Evermoon's camp, north of Maestra's Post
+A 40121 | The Ghoststalker hunts west of Maestra's Post: you'll pass it after Ruuzel @opt
+C 1009 | Ruuzel patrols the Zoram Strand with two guards: pull her away from them @xy=13.0,20.0
+T 1009
+C 40121 @opt
+T 40121 @opt
+C 1054 | Dal Bloodclaw is deep in Thistlefur Village
+T 1054 | Raene in Astranaar
+A 1016 | Silverwind Refuge, south of Astranaar
+C 1016 | Kill Befouled Water Elementals at Mystral Lake for the bracers, then use the Divining Scroll
+T 1016
+A 1017 @opt
+C 1017 | Sarilus Foulborne walks the road south from Silverwind Refuge towards the Barrens @opt
+T 1017 @opt
+F Auberdine | Fly to Auberdine for the boat to Menethil Harbor
+ZONE Darkshore
+T 995 | Terenthis, up the hill from the flight master, before you take the boat
+
+# [[ Darnassus: the fossil, which leads to Blackfathom Deeps ]]
+ZONE Teldrassil
+R | Rut'theran Village | Take the boat from the Auberdine docks, then the portal up to Darnassus
+ZONE Darnassus
+T 741 | Chief Archaeologist Greywhisker
+A 942 | For Archaeologist Flagongut in Menethil Harbor, where the next boat lands
+N Back to Auberdine | Portal down to Rut'theran Village, then the boat back to Auberdine and the one to Menethil Harbor

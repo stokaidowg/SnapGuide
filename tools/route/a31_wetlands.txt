@@ -1,0 +1,44 @@
+ROUTE a31_wetlands | Wetlands | 31 | 32
+ZONE Wetlands
+
+# [[ Menethil Harbor and the Lost Fleet ]]
+R 5.0,62.5 | Menethil Harbor | Off the boat from Auberdine
+T 943 | Archaeologist Flagongut, for the Blackfathom Deeps items @opt
+A 289
+A 472
+C 471 | Giant crocolisks along the coast by the Lost Fleet @opt
+C 289 | Cursed sailors and marines on the wrecks of the Lost Fleet, up the coast
+T 289 | First Mate Fitzsimmons in Menethil
+A 290
+C 290 | Captain Halyndor waits on the farthest wreck. His key opens the strongbox
+T 290 | Intrepid's Locked Strongbox, on the same wreck
+A 292
+T 292 | Glorin Steelbrow in the Menethil tavern
+T 471 @opt
+
+# [[ Whelgar's Excavation ]]
+A 295 | Ormer Ironbraid
+A 299
+C 295 | Mottled Scytheclaws and Razormaws west of the excavation
+C 299 | The fragments drop from the raptors and lie around the dig site
+T 295
+A 296
+C 296 | Sarltooth lives on top of the hill, west
+T 296
+T 299
+
+# [[ Dun Modr and the Thandol Span ]]
+T 472 | Longbraid the Grim at Dun Modr, the dwarven ruin north
+A 631
+A 303
+C 303 | Dark Iron dwarves all through Dun Modr
+T 303
+T 631 | Ebenezer Rustlocke's corpse, on the Thandol Span bridge @zone=Arathi_Highlands
+A 632
+T 632 | Rhag Garmason back at Dun Modr
+A 633
+C 633 | The Cache of Explosives under the Arathi end of the bridge
+T 633
+A 634
+A 647 | Foggy MacKreel, under the bridge
+R 45.8,47.6 | Refuge Pointe | Cross the bridge into Arathi and follow the road north to Refuge Pointe @zone=Arathi_Highlands

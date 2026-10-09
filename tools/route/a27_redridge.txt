@@ -1,0 +1,42 @@
+ROUTE a27_redridge | Redridge Mountains | 27 | 28
+ZONE Redridge Mountains
+
+# [[ Lakeshire ]]
+P Ariena Stormfeather | Lakeshire
+A 128
+A 20
+A 169
+A 91
+A 180
+A 34
+A 150
+A 127
+
+# [[ West and north: Bellygrub, Render's Rock ]]
+C 34 | Bellygrub the boar wanders the field west of Lakeshire
+T 34
+A 219 | Corporal Keeshan is hiding at Render's Rock, north. Escort him back down
+C 128 | Blackrock Champions around Render's Rock, where Keeshan hides
+C 219 | Walk him down the mountain to Lakeshire; he stops to rest when you ask him to @xy=28.4,12.6
+T 219 | Marshal Marris in Lakeshire
+T 128
+
+# [[ East: the lake, Stonewatch, Galardell Valley ]]
+C 150 | Murlocs along the eastern lake shore
+C 127 @together
+C 20 | Blackrock orcs at the camps by Stonewatch drop the axes
+C 169 | Gath'Ilzogg sits in Stonewatch Keep @together
+C 180 | Lieutenant Fangore leads the gnolls in Galardell Valley, further east
+C 91 | Shadowhide gnolls in Galardell Valley drop the pendants @together
+T 150 | Dockmaster Baren on the Lakeshire docks
+T 127
+T 20
+T 169
+T 91
+T 180
+A 19 @opt
+A 115 @opt
+C 19 | Tharil'zun is at the Blackrock pass in the east @opt
+C 115 | Blackrock Shadowcasters drop the orbs @opt
+T 19 @opt
+T 115 @opt

@@ -1,0 +1,121 @@
+ROUTE a28_duskwood | Duskwood | 28 | 30
+ZONE Duskwood
+
+# [[ Darkshire ]]
+R 73.8,44.5 | Darkshire | Ride south-west from Redridge into Duskwood
+P Felicia Maline | Darkshire
+S Innkeeper Trelayne | Darkshire
+A 66
+A 101
+A 56
+T 66
+A 67
+A 173
+A 165
+A 164
+A 163
+A 174 | Needs a Bronze Tube: buy one from an engineering vendor (or the auction house) @opt
+T 174 @opt
+A 175 @opt
+T 175 @opt
+A 177 @opt
+A 377 @opt
+
+# [[ East: Tranquil Gardens, the Rotting Orchard, Roland's Doom ]]
+C 56 | Skeletons in the Tranquil Gardens Cemetery south-east of Darkshire
+C 177 | The Insane Ghoul patrols the cemetery @opt @together
+C 173 | Nightbane Shadow Weavers in the Rotting Orchard
+T 173 | Calor in Darkshire
+A 221
+T 56
+A 57
+T 177 @opt
+A 181 @opt
+C 221 | Nightbane Dark Runners in the Rotting Orchard
+T 221
+A 222
+C 222 | Roland's Doom, south-east
+
+# [[ First trip west: Watcher Paige, Raven Hill, the Hushed Bank ]]
+A 70054 | Watcher Paige by the road in the middle of the woods
+T 163 | Jitters at Raven Hill
+A 5
+C 57 | Skeletons north of Raven Hill
+C 70054 | Grave Robbers around the Raven Hill graveyard
+T 165 | Abercrombie in the hut at Raven Hill Cemetery
+A 148
+A 225 | The Weathered Grave at Forlorn Rowe, north-west
+T 164 | Sven Yorgen at the Hushed Bank, west
+A 95
+
+# [[ Westfall: Moonbrook, the Dagger Hills ]]
+T 67 | The Old Footlocker in Moonbrook
+A 68
+T 1650 | Daphne Stilwell in the Dagger Hills, south of Moonbrook @Paladin
+A 1651 @Paladin
+C 1651 | Defias Raiders come at her in waves (up to four at once). Keep her alive: she can't die @Paladin @xy=41.7,89.2 @zone=Westfall
+T 1651 @Paladin
+A 1652 @Paladin
+C 399 | Baros Alexston's compass is in his old house in Westfall @opt
+P Thor | Westfall | Sentinel Hill flight path, then fly to Darkshire
+
+# [[ Darkshire hand-ins ]]
+ZONE Duskwood
+T 5 | Chef Grual
+A 93
+T 57
+A 58
+T 225
+A 227
+T 227
+T 148
+A 149
+T 222
+A 223
+T 223
+T 377 @opt
+T 149 | Blind Mary, south-east of Darkshire
+A 154
+T 154
+A 157
+C 93 | Spiders in the woods north of Darkshire drop the legs
+T 93
+A 240
+
+# [[ Second trip west ]]
+T 70054 | Watcher Paige
+A 70055
+C 70055 | Defias in the Yorgen Farmstead
+T 95 | The mound of dirt at the Yorgen Farmstead
+A 230
+T 70055
+A 70056
+A 70057
+T 240 | Jitters at Raven Hill
+T 157 | Abercrombie at Raven Hill Cemetery
+A 158
+C 58 | Plague Spreaders down in the Dawning Wood Catacombs, near the cemetery
+T 230 | Sven at the Hushed Bank
+A 262
+T 70057
+
+# [[ Darkshire again ]]
+H Darkshire
+C 101 | Ghoul fangs, spider venom and skeleton fingers: you should have them all from the cemeteries and spiders by now. If anything is short, the spiders north of town and the Raven Hill ghouls drop the rest @xy=75.8,45.3 @nomobs
+T 101 | Madame Eva
+T 58
+T 158
+A 156
+T 262
+A 265
+T 265
+A 266
+T 266
+T 70056
+A 70058
+T 68
+A 69 | For Innkeeper Farley in Goldshire, on your way back through Elwynn @opt
+C 70058 | Splinter Fist ogres at the Vul'Gol Ogre Mound
+C 181 | Zzarc' Vul is inside the same ogre mound and has the monocle @opt @together
+T 70058
+T 181 @opt

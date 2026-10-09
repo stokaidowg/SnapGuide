@@ -1,0 +1,47 @@
+ROUTE a38_desolace | Desolace | 37 | 39
+ZONE Stonetalon Mountains
+F Stonetalon Peak | From Theramore, fly to Stonetalon Peak
+
+ZONE Desolace
+# [[ Nijel's Point and the north ]]
+R 66.0,8.0 | Nijel's Point | Ride south from Stonetalon Peak through the pass into Desolace
+P Baritanas Skyriver | Nijel's Point
+A 1437 | Vahlarriel Demonslayer
+A 60135 | Keeper Marandis
+A 1385 | Captain Pentigast: the Magram side of the centaur war
+T 1437 | The Malem Chest, south-west of Nijel's Point
+A 1465
+T 1465 | Back to Vahlarriel
+A 1438
+T 1438 | Dalinda Malem, hiding by Thunder Axe Fortress
+A 1439
+C 1439 | Burning Blade cultists in Thunder Axe Fortress: one of them has Tyranis' Pendant
+T 1439
+A 1440 | Hand this in when you're back at Nijel's Point
+A 5501 | Bibbly F'utzbuckle, east of the fortress on the road south
+C 60135 | The spirit of Palkeote haunts the plains west of the road
+
+# [[ Magram Village ]]
+T 1385 | Warug, in Magram Village (south-east): you're friends with the Magram now
+A 40609
+C 40609 | Gelkis centaurs in the far south-west
+T 40609
+A 40633
+T 40633 | Jochi
+A 40611
+A 40619 | Warcaller Dekshar
+C 40611 | Raging thunder lizards around the village
+
+# [[ The Kodo Graveyard ]]
+A 5561 | Smeed Scrabblescrew, at the graveyard's edge
+C 5561 | Use the Kombobulator on the Ancient Kodos and walk the tamed kodo back to Smeed @xy=51.5,59.0
+C 40619 | Kodos in the graveyard drop the meat
+C 5501 | Kodo bones lie all over the graveyard @together
+T 5561
+T 40611 | Back at Magram Village
+T 40619
+T 5501 | Bibbly, on the way north
+
+# [[ Back to Nijel's Point ]]
+T 1440
+T 60135

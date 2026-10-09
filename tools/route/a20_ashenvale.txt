@@ -1,0 +1,72 @@
+ROUTE a20_ashenvale | Ashenvale | 20 | 22
+ZONE Ashenvale
+
+# [[ Maestra's Post: hand in Darkshore's escorts ]]
+T 5321
+T 5713
+T 967
+A 970
+A 41127 | Delgren also sends you to the dwarves of Bael Hardul in Stonetalon: you hand it in on the way in
+A 1010
+A 40230 | Saltspittle murlocs at Lake Falathim, the same ones Raene's Cleansing needs later
+
+# [[ North Ashenvale: Bathran's Haunt and Ardaen's camp ]]
+A 40120 | Ardaen Evermoon's camp north of Maestra's Post. The Ghostpaw Runners are down south-west: you'll get the pelts at 24
+A 40197
+C 1010 | The plant bundles lie around Bathran's Haunt
+C 970 | Dark Strand cultists at Bathran's Haunt and the ruins north of it
+C 40197 | Old Greypaw roams with the Ghostpaw wolves
+T 40197
+T 970 | Back at Maestra's Post
+A 973 | For later (the Fire Scar Shrine, around level 24)
+T 1010
+A 1020
+
+# [[ Shrine of Aessina, then Astranaar ]]
+T 945 | Therysil at the Shrine of Aessina, south-west
+R 34.4,48.0 | Astranaar
+P Daelyshia | Astranaar
+S Innkeeper Kimlya | Astranaar
+A 1008
+A 1070
+A 1056
+A 991
+A 40192 | All three clues are just north of Astranaar: you'll pick them up before you hand in at the end
+T 1020
+A 1033
+
+# [[ The Zoram Strand ]]
+A 1007
+C 1007 | The statuette lies on the ground among the naga ruins
+C 1008 | Wrathtail naga all along the strand @together
+T 1007
+A 1009 | Ruuzel is level 25 with two guards: keep this for when you come back at 24
+
+# [[ Lake Falathim, Maestra's Post ]]
+T 991 | Teronis' Corpse by the lake
+A 1023
+C 1023 | Saltspittle murlocs around the lake
+C 40230 @together
+T 40230 | Hadanos at Maestra's Post
+
+# [[ Astranaar, Iris Lake, the moonwell, Foulweald ]]
+T 1023
+A 1024
+A 1025
+T 1008
+A 1134 | For Stonetalon
+C 1033 | Elune's Tear lies on the island in Iris Lake @xy=46.2,46.0
+T 1024 | Shael'dryn at the moonwell east of Iris Lake
+A 55032 | Grol the Exile, south of the moonwell
+C 1025 | Foulweald furbolgs south-east of the moonwell
+C 55032 @together
+T 55032
+
+# [[ Astranaar, Ruins of Stardust ]]
+T 1025
+T 1033
+A 1034
+C 40192 | Tainted Sap (40,47) and a Hanging Bag (35,45) just north of Astranaar; a Thistlefur Recluse spider near 37,46 drops the third @opt @xy=37.5,46.0
+T 40192 @opt
+A 1054 | Dal Bloodclaw is level 25: keep this for when you're back from Stonetalon
+C 1034 | Handfuls of Stardust lie around the Ruins of Stardust

@@ -1,0 +1,49 @@
+ROUTE a32_hillsbrad | Hillsbrad Foothills | 32 | 33
+ZONE Arathi Highlands
+
+# [[ Refuge Pointe ]]
+P Cedrik Prose | Refuge Pointe
+T 634
+A 681
+C 681 | Syndicate highwaymen and mercenaries at Northfold Manor, north-west
+
+ZONE Hillsbrad Foothills
+# [[ Southshore ]]
+R 50.5,57.5 | Southshore | Take the road west out of Arathi, through the Thoradin's Wall gate, into Hillsbrad
+P Darla Harris | Southshore
+S Innkeeper Anderson | Southshore
+T 647 | Brewmeister Bilger
+A 536
+A 555
+A 505
+A 564
+A 659 | For Quae in Arathi: keep it for when you're back there @opt
+
+# [[ The coast ]]
+C 536 | Torn Fin murlocs along the coast south of Southshore
+C 555 | Snapjaw turtles along the river and coast drop the meat; buy Soothing Spices from Micha Yance in Southshore
+T 536
+A 559
+C 559 | The same murlocs drop the heads
+T 559
+A 560
+T 560 | Marshal Redpath
+A 561
+T 561
+A 562
+C 562 | Daggerspine naga further down the coast
+T 562
+T 555
+
+# [[ The Alterac foothills ]]
+C 564 | Mountain lions in the hills north of Southshore
+C 505 | Syndicate footpads and thieves at Sofera's Naze, in the Alterac foothills
+A 510 | The Syndicate Documents in the camp at Sofera's Naze @zone=Alterac_Mountains
+A 511 @zone=Alterac_Mountains
+H Southshore
+T 564
+T 505
+T 510
+T 511
+A 512 | Syndicate signet rings: you'll get them in Strahnbrad after Arathi
+A 500 | Crushridge ogres in the Alterac Mountains, also after Arathi

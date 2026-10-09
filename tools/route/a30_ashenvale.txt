@@ -1,0 +1,68 @@
+ROUTE a30_ashenvale | Ashenvale | 30 | 31
+ZONE Stormwind City
+F Stormwind | Fly from Darkshire to Stormwind
+T 1652 | Duthorian Rall: Sense Undead and the Bastion of Stormwind shield @Paladin
+T 399 | Baros Alexston in Cathedral Square, just outside the Cathedral of Light @opt
+A 1653 | The Test of Righteousness: its parts need Shadowfang Keep and the Deadmines, but it ends in Verigan's Fist. Take it if you'll run those dungeons @Paladin @opt
+N Getting to Ashenvale | Fly to Menethil Harbor (through Ironforge), take the boat to Auberdine, then fly to Astranaar
+
+ZONE Ashenvale
+F Astranaar
+A 4581
+A 1035
+
+# [[ The moonwell and Night Run ]]
+A 1026 | Shael'dryn at the moonwell east of Astranaar
+C 1026 | The Wooden Key and the rod piece are in the worn chest at Night Run, south-east of the moonwell @xy=58.3,59.7 @nomobs
+R 66.6,57.0 | Night Run | The Tower of Althalaxx: free the Highborne soul at the Circle of Imprisonment, east of the chest
+T 1026 | Back to Shael'dryn at the moonwell
+A 1027 | The slimes are in the Dor'Danil Barrow Den, which you'll visit from Forest Song
+
+# [[ Forest Song ]]
+T 4581 | Kayneth Stillwind in Forest Song, far east
+A 1011
+A 40796
+A 40842
+A 40807 | Commander Starwind. Brolthan offers the other side of the same choice: pick Starwind, his quests pay better
+T 40807 | Hear them both out, then side with Starwind @xy=86.7,43.2
+A 40808
+C 1011 | The Bottle of Disease is in the Dor'Danil Barrow Den, south-west of Forest Song
+C 1027 | Rotting Slimes in the same barrow den drop the Iron Pommel @xy=76.0,73.0 @mobs=Rotting_Slime
+C 40808 | Horde peons, scouts, deforesters and grunts at the Horde camp south of Forest Song
+C 40796 | Six horns from each satyr camp: Bleakheart, Xavian and Felmusk
+C 40842 | Demon Fall Canyon, south-west of Forest Song: infernals, felguards and lashers
+C 1140 | The second Highborne soul: the Circle of Imprisonment in Satyrnaar, south-west of Forest Song @xy=81.6,48.6 @nomobs
+T 1011
+A 1012
+T 40808
+T 40796
+T 40842
+A 40843
+C 1012 | The three druids are inside the Dor'Danil Barrow Den. They're lightly guarded @opt
+C 40843 | Varaxxius leads the demons in Demon Fall Canyon. He hits hard: bring a friend if you can @opt
+T 1012 @opt
+T 40843 @opt
+
+# [[ Back west: Raene's Cleansing, Fallen Sky Lake ]]
+T 1027
+A 1028
+T 1028 | The Hidden Shrine, up the path south-east of the moonwell
+A 1055
+T 1055
+A 1029
+T 1029 | Raene in Astranaar
+A 1030
+T 1030 | Krolg, in the hills south of the moonwell
+A 1045
+C 1045 | Ran Bloodtooth's camp
+C 1035 | A Shadethicket Oracle at Fallen Sky Lake, east of Ran Bloodtooth's camp, carries the Moonstone
+T 1045
+A 1046
+T 1046 | Raene in Astranaar: her reward is Dartol's Rod
+T 1035 | Pelturas in Astranaar
+
+# [[ Maestra's Post and Blackfathom Deeps ]]
+T 1140 | Delgren the Purifier at Maestra's Post, west of Astranaar
+C 943 | Blackfathom Deeps (needs a group): the entrance is in the water at the Zoram Strand, far north-west. Flagongut's Fossil lies inside, and the Stone of Relu drops in there too @opt @xy=14.2,14.0 @nomobs
+
+F Auberdine | Then the boat to Menethil Harbor

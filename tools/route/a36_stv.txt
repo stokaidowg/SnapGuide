@@ -1,0 +1,29 @@
+ROUTE a36_stv | Stranglethorn Vale | 36 | 38
+ZONE Stranglethorn Vale
+
+# [[ Booty Bay ]]
+A 213 | Kebok, upstairs in Booty Bay
+A 40175 | Dirty Jacob, on the docks @opt
+C 40222 | The Refined Gem Shipment is just north of Booty Bay, by the road
+
+# [[ North loop ]]
+C 605 | Basilisks in the middle of the jungle drop the Singing Crystal Shards
+C 213 | Venture Co. Geologists at the Venture camp by the lake carry the Tumbled Crystals
+C 40175 | Nagzel Powdernose at the same Venture camp @opt @together
+C 192 | Shadowmaw Panthers in the eastern jungle @opt
+C 187 | Elder tigers west of the Venture camp @opt
+C 575 | River crocolisks in the river by Nesingwary's camp
+T 187 | Ajeck Rouack at Nesingwary's @opt
+T 192 @opt
+C 189 | Bloodscalp trolls at their camps in the north-west
+C 578 | Swim out to the haunted island off the west coast
+H Booty Bay
+
+# [[ Booty Bay hand-ins ]]
+T 40222
+T 575
+T 605
+T 213
+T 189
+T 578
+T 40175 @opt

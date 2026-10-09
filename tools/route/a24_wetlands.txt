@@ -1,0 +1,116 @@
+ROUTE a24_wetlands | Wetlands | 24 | 27
+# picked up on the way: Tower of Althalaxx part 5 (Delgren, a24), Charred Vale (Stonetalon),
+# the Glowing Shard (Wailing Caverns)
+LOG 1140 1057 6981
+
+# [[ Auberdine: Wailing Caverns turn-ins before the boat ]]
+ZONE Darkshore
+T 60125 | Alanndarian Nightsong in Auberdine, by the moonwell
+T 60124 | Alanndarian again
+T 41363 | Thundris Windweaver, next to her
+
+# [[ Make room in the log ]]
+X 263 | These troggs are grey for you now: not worth the trip back
+X 255 | The Loch Modan ogres give almost nothing at your level now
+X 436 | Same: a long walk for little XP
+X 1057 | Reclaiming the Charred Vale: the guide doesn't go back to Stonetalon
+X 6981 | The Glowing Shard leads to Ratchet and the Barrens, far off the route
+
+ZONE Wetlands
+
+# [[ Menethil Harbor: off the boat from Auberdine ]]
+R 5.0,62.5 | Menethil Harbor | Take the boat from Auberdine to Menethil Harbor
+P Shellei Brondir | Menethil Harbor
+T 942 | Archaeologist Flagongut
+A 943 | Stone of Relu and Flagongut's Fossil are in Blackfathom Deeps: you run it at 30, back in Ashenvale @opt
+A 279
+A 484
+A 463
+A 470
+A 288
+B Innkeeper Helbrek | Flagon of Mead (for The Third Fleet)
+T 288
+A 305
+
+# [[ Bluegill Marsh ]]
+C 279 | Bluegill murlocs north of Menethil. Gobbler wanders the camp
+T 279 | Back at Menethil
+A 281
+T 281 | The Damaged Crate in Bluegill Marsh
+A 284
+T 284
+A 285
+T 285
+A 286 | Hand this in when you're next in Menethil
+
+# [[ The south road, Hawk's Vigil, Whelgar's Excavation ]]
+A 55201 | Captain Snowbeard on the road east of Menethil
+A 55200 | Samuel Vickers, just before Hawk's Vigil
+A 40566 | Rose Dolohov in Hawk's Vigil, the new town in the middle of the Wetlands
+A 40368
+A 55203
+A 55215
+S Innkeeper Heidi | Hawk's Vigil
+T 55215
+A 55216
+T 55216
+A 55217
+T 55217
+A 55218
+T 55218
+A 55219
+T 55219
+A 55220 | For Mathias Shaw in Stormwind: keep it until you're there
+C 40368 | Auribloom grows around Hawk's Vigil
+T 40368
+T 305 | Merrin at Whelgar's Excavation, north of Hawk's Vigil
+A 306
+A 294
+C 294 | Mottled raptors west of the excavation
+C 55201 | Same raptors drop the talons @together
+T 294
+T 55201 | Captain Snowbeard
+C 40566 | Leech Stalkers in the caves east of Hawk's Vigil
+T 40566
+A 40567
+C 40567 | Talk to Bert Mano in Hawk's Vigil @xy=37.2,64.7 @mobs=Bert_Mano
+T 40567
+A 40568 | For Gakin in Stormwind: keep it until you're there
+
+# [[ The Green Belt: the Greenwarden and the Mosshide ]]
+A 469 | Einar Stonegrip on the road north-east
+T 463
+A 276
+A 40679 | Gowlfang's friendly Mosshide camp, next to the Greenwarden
+A 40682
+A 40683
+C 484 | Young crocolisks along the river by the Green Belt
+C 276 | Mosshide gnolls in the camps south-east of the Green Belt
+C 40679 @together
+T 276
+A 277
+T 40679
+A 40680
+C 40683 | Whelps on the hills east of the Green Belt
+C 40682 | Razormaw raptors on Raptor Ridge, north-east
+T 40682
+T 40683
+C 277 | The Mosshide camps north of Whelgar's Excavation
+C 40680 | The Mosshide Alpha leads the northern camp @opt @together
+C 470 | Black Oozes north of the Mosshide camps
+C 55200 | The same oozes, and Simple Wood lying around @together
+T 277 | Back to the Greenwarden
+T 40680 @opt
+
+# [[ Back west ]]
+H Hawk's Vigil
+T 55200
+R 10.0,58.0 | Menethil Harbor
+T 484
+T 469
+T 470
+T 286
+T 55203
+A 471
+A 473
+T 473

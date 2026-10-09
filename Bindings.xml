@@ -1,0 +1,8 @@
+<Bindings>
+  <Binding name="SNAPGUIDE_TARGET" header="SNAPGUIDE">
+    SnapGuide:Target()
+  </Binding>
+  <Binding name="SNAPGUIDE_SKIP">
+    SnapGuide:Tick(SnapGuide.step)
+  </Binding>
+</Bindings>

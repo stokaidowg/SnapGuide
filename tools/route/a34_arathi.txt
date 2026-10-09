@@ -1,0 +1,41 @@
+ROUTE a34_arathi | Arathi Highlands | 34 | 36
+ZONE Arathi Highlands
+
+# [[ Gallant Square: Stromgarde's Alliance camp ]]
+R 21.5,61.5 | Gallant Square | Ride east from Southshore through Thoradin's Wall, then south to the Alliance camp at Stromgarde
+A 40448 | Annabelle Livingstone at the croft just north of the camp
+A 40449
+A 40453
+A 40511
+A 40451
+T 40448 | Brian Livingstone in Gallant Square
+C 40449 | Plains Creepers and Highland Thrashers in the fields east of the croft
+C 40453 | Boulderfist ogres in the hills around Stromgarde
+T 40449
+T 40453
+
+# [[ Refuge Pointe, Go'Shek Farm ]]
+T 40511 | Apprentice Kryten in Refuge Pointe
+A 40512
+T 681 | Captain Nials: Northfold Manor, from your way to Southshore
+A 682 @opt
+T 659 | Quae, in the field by the Go'Shek Farm
+A 658
+C 658 | The Forsaken Courier walks the road with her guards; she carries the folder
+C 40512 | A sack of Magical Grains in the Go'Shek Farm
+T 658
+A 657
+T 657 | Kinelory, next to Quae
+A 660
+C 660 | Escort Kinelory to the Hammerfall camp and back @opt @xy=60.2,53.9
+T 660 @opt
+A 661 @opt
+C 40451 | Witherbark Shadow Hunters in Witherbark Village, south-east
+C 682 | Stromgarde badges drop from the Syndicate in Stromgarde @opt
+
+# [[ Back to Gallant Square ]]
+T 40512 | Tarral Holk in Gallant Square
+T 40451 | Troll Hunter Penthar
+A 40452 @opt
+C 40452 | The Ruins of Zul'Rasaz trolls @opt
+T 40452 @opt

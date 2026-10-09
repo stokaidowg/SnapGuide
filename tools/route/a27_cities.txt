@@ -1,0 +1,18 @@
+ROUTE a27_cities | Ironforge and Stormwind | 27 | 27
+ZONE Ironforge
+F Ironforge | Fly from Menethil Harbor to Ironforge
+T 1072 | Lomac Gearstrip in Tinker Town
+A 1794 | Paladin quest: Tiza Battleforge in the Mystic Ward gives you the Tome of Valor @Paladin
+T 1794 @Paladin
+A 1649 | Start it from the Tome of Valor in your bags @Paladin
+T 6392 | Optional: fly to Thelsamar and hand in Return to Brock (free XP) @opt
+R 76.0,51.0 | Deeprun Tram | Take the tram to Stormwind
+
+ZONE Stormwind City
+T 1649 | Duthorian Rall in the Cathedral @Paladin
+A 1650 | Daphne Stilwell is in Westfall: you'll go there from Duskwood @Paladin
+T 1075 | Collin Mauren in the Mage Quarter
+T 40568 | Gakin the Darkbinder, in the basement of the Slaughtered Lamb
+T 55220 | Master Mathias Shaw in Old Town. His next quest needs the Stockade dungeon: skip it unless you have a group
+P Dungar Longdrink | Stormwind | Grab the flight path if you don't have it
+F Lakeshire | Fly (or ride through Elwynn) to Lakeshire in Redridge

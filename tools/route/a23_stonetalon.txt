@@ -1,0 +1,33 @@
+ROUTE a23_stonetalon | Stonetalon Mountains | 22 | 24
+ZONE Ashenvale
+R 42.0,71.0 | The Talondeep Path | South of the Ruins of Stardust, the tunnel into Stonetalon
+
+ZONE Stonetalon Mountains
+# [[ Bael Hardul ]]
+T 41127 | Lead Explorer Whitepeak in Bael Hardul, the dwarf outpost in the mountains south of the Talondeep Path exit. The way up is a hidden path near Bramblethorn Pass
+
+# [[ Windshear Crag ]]
+T 1070
+A 1085
+T 1085
+A 1071
+C 1071 | Venture Co. loggers and deforesters all over the Crag
+T 1071
+A 1072 | For Ironforge later: keep it, it's a free turn-in @opt
+A 1075 | For Stormwind later @opt
+
+# [[ Mirkfallon Lake, then up to Stonetalon Peak ]]
+C 1134 | Pridewing wyverns around Mirkfallon Lake
+R 36.4,7.2 | Stonetalon Peak | Follow the road north past the Charred Vale to the Peak
+T 1056
+P Teloren | Stonetalon Peak
+A 80397
+A 40227
+A 41209
+C 80397 | Sap Beasts in the woods around the Peak
+C 40227
+C 41209
+T 80397
+T 40227
+T 41209
+F Astranaar

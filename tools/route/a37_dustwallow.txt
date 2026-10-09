@@ -1,0 +1,70 @@
+ROUTE a37_dustwallow | Dustwallow Marsh | 37 | 39
+ZONE Dustwallow Marsh
+N Getting to Theramore | Fly from Booty Bay to Menethil Harbor (through Stormwind and Ironforge), then take the boat to Theramore
+
+# [[ Theramore Isle ]]
+R 70.3,50.6 | Theramore docks | Off the boat at Theramore
+A 40413 | Dockmaster Lorman
+A 40412
+A 40411 @opt
+P Baldruc | Theramore
+S Innkeeper Janene | Theramore
+A 1282 | Guard Byron at the gate
+T 1282 | Captain Garran Vimes in the keep
+A 1288
+T 1288 | Lady Jaina Proudmoore, top of the tower
+A 40415 | Colonel Breen
+A 40964 | Corporal Danmere: a delivery for Gilneas later (level 40+) @opt
+A 40414 @opt
+
+# [[ The lighthouse ]]
+T 40413 | Old Bryan at the lighthouse north of the isle
+A 40409
+A 40410
+R 60.0,41.0 | Sentry Point Tower | Get the Sentry Point Report (Reports of Dustwallow) at the tower by the road north-west of Theramore
+
+# [[ The north coast ]]
+C 40410 | The stolen oil barrel is in the Mirefin camp on the north-east coast
+C 40409 | Mirefin murlocs all along the north coast
+C 40414 | Marglum Blood-eye walks the same coast @opt @together
+
+# [[ Swamplight Manor and Northpoint ]]
+T 40412 | "Swamp Eye" Jarl at Swamplight Manor
+A 40408
+A 1219 | The Loose Dirt by Jarl's house hides a spy's report
+A 40418 | Captain Harker at Northpoint Tower
+C 40415 | The North Point Report is at North Point Tower here (you have Sentry Point's) @xy=46.5,23.8
+C 40418 | Bloodfen raptors around Northpoint
+C 40408 | Darkfang spiders in the north-west of the marsh
+A 1222 | "Stinky" Ignatz, north of Northpoint. Escort him out
+C 1222 | Walk him south out of the marsh; murlocs and raptors jump him on the way @xy=46.9,17.5
+T 40418
+T 40408
+
+# [[ The west: Shady Rest ]]
+A 1284 | The hoofprints outside the burnt Shady Rest Inn
+A 1253 | The Black Shield in the inn's ruins
+A 1252 | The Theramore Guard Badge, also in the ruins
+
+# [[ Back to Theramore ]]
+H Theramore
+T 1219 | A Theramore Lieutenant by the gate
+A 1220
+T 1220
+T 40409 | Old Bryan at the lighthouse
+T 40410
+T 1222 | Morgan Stern
+T 40415
+T 1284
+T 1253
+A 1319
+T 1319 | Caz Twosprocket
+A 1320
+T 1320
+T 1252
+A 1259
+T 1259 | Adjutant Tesoran
+A 1285
+T 1285
+T 40414 @opt
+T 40411 @opt

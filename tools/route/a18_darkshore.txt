@@ -1,0 +1,78 @@
+ROUTE a18_darkshore | Darkshore | 18 | 21
+ZONE Darkshore
+
+# Stokaido's history (pfQuest) and quest log on 2026-10-07, so the builder can check this route
+START 18 7919
+DONE 170 182 218 224 234 237 267 282 287 291 307 310 311 312 313 314 315 317 318 319 320 384 400 412 413 414 415 416 417 419 420 432 433 953 954 955 956 957 958 963 965 966 982 983 984 985 1001 1002 1338 1339 1645 1646 1647 1648 1778 1779 1783 1784 1785 2118 2138 2160 2999 3107 3361 3364 3365 3524 4681 4722 4723 4725 4728 4761 4762 4811 4812 4813 5541 6387 6388 6391 39001 40863 60142 6342 6343 730
+LOG 1003 947 2139 4763 967 4740 986 263 436 255 399 60125 60124 41363 6392
+
+# [[ Auberdine ]]
+A 729 | Hollee sends you to Prospector Remtravel in the south; you'll pass him later
+R 37.8,44.0 | Auberdine moonwell | Use the Empty Cleansing Bowl at the moonwell to fill it (for The Blackwood Corrupted)
+
+# [[ North loop: Blackwood camp, mushroom cave, Mist's Edge ]]
+R 50.7,35.0 | Blackwood furbolg camp | Grain sample in the barrel at 50.7,35.0, nuts at 51.8,33.6, fruit at 52.9,33.4
+C 4763 | With all three samples, use the Filled Cleansing Bowl at the bonfire (52.4,33.4) to summon Xabraxxis. Kill him for the Talisman @xy=52.4,33.4 @mobs=Xabraxxis
+C 2139 | Den Mother sleeps in the cave just south (51.6,37.4) with her cubs, and the cubs chain-stun you. Kill the cubs first, or bring a friend. Skip it if it's going badly and abandon the quest @opt @xy=51.6,37.4
+C 947 | Up the river path into the naga cave: mushrooms grow on the ground inside (54.3,31.8 to 56,35) @xy=54.6,33.0
+A 4727 | The turtle on the beach
+A 80391
+A 2098 | Gelkak is just up the beach from Inunquaq: take both before you start on the crawlers
+C 80391 | Any crawler on the beach drops Crawler Meat
+C 2098 | Bottom of the key: Raging Reef Crawlers (you get it with the meat). Top: Giant Foreststriders. Middle: Greymist Oracles and Tidehunters @together
+T 80391
+T 2098
+A 2078 | The robot turns on you as soon as it reaches Gelkak. Pull it away from the camp, use your cooldowns @opt
+C 2078 @opt
+T 2078 @opt
+H Auberdine | Hearth back (your hearth is already Auberdine)
+
+# [[ Auberdine turn-ins ]]
+T 947
+A 948
+T 4763
+T 2139 @opt
+T 4727
+
+# [[ South: Murkdeep, Onu, the escorts ]]
+C 4740 | Kill murlocs at the huts and Murkdeep comes out with a couple of helpers. Clear the huts first @xy=36.5,76.5 @mobs=Murkdeep;Greymist_Warrior;Greymist_Hunter
+A 4730 | Beached Sea Creature on the shore
+A 4731
+A 4732
+A 4733
+T 729
+A 731 | Escort. Clear the mobs near Remtravel before you start it, he's slow and fragile
+C 731 | Walk with him to the fossil site and keep him alive @xy=35.7,83.7
+C 1003 | Grizzled Thistle Bears all around the south. Den Mother also drops scalps @xy=42.0,83.0
+C 986 | Moonstalker Sires and Matriarchs roam the same southern hills as the bears (40% pelt drop). Far more of them here than up at Mist's Edge @together
+T 1003
+T 948
+A 944
+C 944 | Walk south into The Master's Glaive @xy=39.3,85.0
+T 944 | Use the Phial of Scrying to summon the Scrying Bowl, then turn the quest in to it @xy=39.3,85.0
+A 949 | From the Scrying Bowl @xy=39.3,85.0
+T 949 | The Twilight Tome lies in the camp @xy=38.6,86.0
+A 950
+A 945 | Escort: walk Therylune out of the Glaive. Turned in later in Ashenvale
+C 945 | Follow her out of the Glaive @xy=38.6,87.3
+T 950
+A 5713 | Aynasha is at the shore south of the Grove. Shoot the waves of murlocs/naga that come at her
+C 5713 | Stay next to her until the last wave dies @xy=45.8,90.2
+
+# [[ Auberdine, then into Ashenvale ]]
+H Auberdine | Or run, if your hearth isn't ready
+T 4740
+T 731
+A 741 | Hollee sends the fossil on to Darnassus: you take it there from Auberdine at 24
+T 986
+A 993
+T 4730
+T 4731
+T 4732
+T 4733
+L 20 | You should be level 20 by now. If not, kill a few Thistle Bears on the way south
+T 993 | Volcor is deep in the Blackwood Den, just south of the Grove. The Enchanted Moonstalker Cloak (from Terenthis) lets you sneak past
+A 995 | Take the stealth version: put on the cloak and walk out
+C 995 | Walk out of the den with the cloak on. Terenthis gets the turn-in when you fly back to Auberdine for the Menethil boat @xy=44.8,85.2
+A 5321 | Kerlonian Evershade is asleep at the Grove of the Ancients. Accept when you're ready to walk to Ashenvale: he falls asleep on the way, wake him with the Horn of Awakening. Go off the main road to avoid the ambush @xy=44.4,76.4
+R 27.3,35.6 | Maestra's Post, Ashenvale | Walk Kerlonian south along the coast into Ashenvale @zone=Ashenvale

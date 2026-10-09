@@ -1,0 +1,40 @@
+ROUTE a38_badlands | Badlands | 38 | 40
+ZONE Badlands
+N Getting to the Badlands | From Nijel's Point fly to Auberdine, take the boat to Menethil Harbor, fly to Thelsamar, then ride south out of Loch Modan into the Badlands
+
+# [[ The Forgotten Keeper ]]
+A 40712 | The Forgotten Keeper, at the Ruins of Zeth in the north-east
+C 40712
+T 40712
+A 40713
+C 40713 | Take the Mallet of Zeth to the Temple of Corthan and ring the gong
+T 40713
+A 40714
+T 40714
+A 40715
+T 40715 | Marauder King Corthan, south of the ruins
+A 40716
+C 40716 | The History of Corthan lies in the crypt where Corthan rests
+T 40716
+
+# [[ The dig site and Angor Fortress ]]
+A 718 | Sigrun Ironhew at the dwarven dig site in the middle of the Badlands
+A 40229 | Senator Broadbelt, next to Sigrun
+A 40228
+A 2418 | Rigglefuzz, west of the dig site @opt
+C 718 | The Supply Crate is out in the hills north-east of the dig site
+C 40229 | Dark Iron dwarves around Angor Fortress, north-west
+C 40228 | Captain Barlgruf inside Angor Fortress @together
+C 2418 | Dark Iron dwarves north of the fortress carry the power stones @opt
+T 718
+T 40229
+T 40228
+T 2418 @opt
+
+# [[ Noli's camp in the south ]]
+A 70050 | Noli, at the camp in the south
+A 80400 | Prospector Brotalus, same camp
+C 70050 | Dry fire wood lying around the camp's hills
+C 80400 | Dwarven Writings scattered around the ruins near the camp @together
+T 70050
+T 80400

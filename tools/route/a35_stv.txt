@@ -1,0 +1,64 @@
+ROUTE a35_stv | Stranglethorn Vale | 35 | 37
+ZONE Duskwood
+F Darkshire | Fly from Southshore to Darkshire
+
+ZONE Stranglethorn Vale
+# [[ Rebel Camp and Nesingwary's Expedition ]]
+R 38.0,3.3 | Rebel Camp | Ride south out of Duskwood into northern Stranglethorn: the camp is just past the border
+A 203
+A 204
+A 215
+T 215 | Lieutenant Doren, in the camp
+A 200
+A 583 | Barnil Stonepot at Nesingwary's camp, south of the Rebel Camp
+T 583
+A 185
+A 190
+A 194
+
+# [[ Northern jungle: the first hunts and the Kurzen ]]
+C 194 | Raptors along the river
+C 185 | Young tigers around the camp
+C 190 | Young panthers south of the camp @together
+C 203 | Kurzen Jungle Fighters in the Kurzen Compound, east
+C 204 | Jungle Remedies from the Kurzen; the Venom Fern Extract from the Kurzen Headshrinkers @together
+T 200 | Bookie Herod's Records lie in the Kurzen Compound
+A 328
+T 328 | Bookie Herod's Strongbox is hidden in the cave behind the compound
+A 329
+T 185
+A 186
+T 190
+A 191
+T 194
+A 195
+C 191 | Panthers in the jungle west of the camp
+C 195 | Lashtail raptors further south
+C 186 | Tigers in the hills east of Nesingwary's, past the Kurzen Compound
+T 186
+T 191
+T 195
+A 187 @opt
+A 192 @opt
+
+# [[ Rebel Camp hand-ins ]]
+T 203
+T 204
+T 329
+A 330
+T 330
+A 331
+T 331
+A 574 @opt
+
+# [[ Booty Bay ]]
+R 27.0,77.0 | Booty Bay | Follow the road south to Booty Bay
+P Gyll | Booty Bay
+S Innkeeper Skindle | Booty Bay
+A 575
+A 605
+A 189
+A 40222
+A 616
+T 616 | Baron Revilgaz, upstairs in the inn
+A 578

@@ -1,0 +1,46 @@
+ROUTE a40_stv | Stranglethorn Vale | 40 | 42
+ZONE Duskwood
+F Booty Bay | Fly from Darkshire to Booty Bay
+
+ZONE Stranglethorn Vale
+S Innkeeper Skindle | Booty Bay | Make Booty Bay your home: the route hearths back here
+# [[ Booty Bay ]]
+A 595 | First Mate Crazz
+A 606 | "Sea Wolf" MacKinley
+A 617 | Privateer Bloads @opt
+A 600 | Crank Fizzlebub
+A 621 | Level 44: only if you're feeling strong @opt
+A 60155 | Innkeeper Skindle @opt
+
+# [[ North of Booty Bay ]]
+T 595 | The Bloodsail Correspondence on the coast north of Booty Bay
+A 597
+C 617 | Akiris reeds grow along the coast here (level 43 quest) @opt
+C 606 | Mistvale gorillas in the valley east of the coast road drop the giblets
+C 621 | Zanzil hunters and zombies at the Ruins of Aboraz @opt
+C 600 | Venture Co. miners in the Crystalvein Mine
+H Booty Bay
+
+# [[ Booty Bay, the shore south ]]
+T 597 | First Mate Crazz
+A 599
+T 599 | Fleet Master Seahorn, upstairs in the inn
+A 604
+T 606 | "Shaky" Phillipe on the docks
+A 607
+T 607
+T 617 @opt
+T 600
+T 621 @opt
+A 587 | Deeg
+A 576 | Dizzy One-Eye
+C 604 | Bloodsail swashbucklers on the shore south of Booty Bay
+C 587 | The same pirates carry the snuff @together
+C 576 | One of them has Dizzy's eye @together
+C 60155 | Southern sand crawlers on the same beaches @opt @together
+T 604
+T 587
+T 576
+T 60155 @opt
+A 2864 | Krazek: a delivery for Tanaris
+A 2872 | MacKinley: another one for Tanaris
