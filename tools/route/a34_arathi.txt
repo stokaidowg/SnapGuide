@@ -29,7 +29,6 @@ T 657 | Kinelory, next to Quae
 A 660
 C 660 | Escort Kinelory to the Hammerfall camp and back @opt @xy=60.2,53.9
 T 660 @opt
-A 661 @opt
 C 40451 | Witherbark Shadow Hunters in Witherbark Village, south-east
 C 682 | Stromgarde badges drop from the Syndicate in Stromgarde @opt
 

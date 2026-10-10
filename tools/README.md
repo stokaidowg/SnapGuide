@@ -32,3 +32,5 @@ and not ones flagged `@keep` in the route script.
 - `node travel.js` - straight-line walking estimate per built route (hearths and flights reset
   your position), its five longest legs, and "out and back" trips that walk somewhere and return
   to the same spot. Use it before/after reordering a route to see whether it helped.
+- `extra-db.lua` - quests the server has that pfQuest-octo doesn't yet (patch 1.18: Grim Reaches,
+  Dragonmaw Retreat). `extra-db-gen.lua` says how it was made from pfQuest-turtle.

@@ -1,6 +1,6 @@
 ROUTE a38_badlands | Badlands | 38 | 40
 ZONE Badlands
-N Getting to the Badlands | From Nijel's Point fly to Auberdine, take the boat to Menethil Harbor, fly to Thelsamar, then ride south out of Loch Modan into the Badlands
+N Getting to the Badlands | From Theramore take the boat to Menethil Harbor, fly to Thelsamar, then ride south out of Loch Modan into the Badlands
 
 # [[ The Forgotten Keeper ]]
 A 40712 | The Forgotten Keeper, at the Ruins of Zeth in the north-east

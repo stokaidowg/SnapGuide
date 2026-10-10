@@ -27,7 +27,6 @@ SnapGuide:Route({
     {a="A",q=660,t="Hints of a New Plague?",n="Kinelory",x=60.2,y=53.9,z="Arathi Highlands",el=34.2,pre={657},o="Protect Kinelory until she returns to Quae."},
     {a="C",q=660,t="Hints of a New Plague?",x=60.2,y=53.9,z="Arathi Highlands",el=34.2,o="Protect Kinelory until she returns to Quae.",note="Escort Kinelory to the Hammerfall camp and back",opt=true},
     {a="T",q=660,t="Hints of a New Plague?",n="Quae",x=60.2,y=53.8,z="Arathi Highlands",el=34.2,o="Protect Kinelory until she returns to Quae.",opt=true},
-    {a="A",q=661,t="Hints of a New Plague?",n="Quae",x=60.2,y=53.8,z="Arathi Highlands",el=34.2,sk=0.04,ql=37,pre={660},o="Find Phin Odelic in Southshore.",opt=true},
     {a="C",q=40451,t="To Strike Back : Witherbark Village",x=68.0,y=80.6,z="Arathi Highlands",el=34.3,mobs={"Witherbark Shadow Hunter"},o="Travel to Witherbark Village and slay 10 Witherbark Shadow Hunters for Troll Hunter Penthar in Gallant Square at Stromgarde Keep.",note="Witherbark Shadow Hunters in Witherbark Village, south-east"},
     {a="C",q=682,t="Stromgarde Badges",x=27.4,y=63.8,z="Arathi Highlands",el=34.3,mobs={"Syndicate Prowler","Syndicate Conjuror","Syndicate Magus"},o="Bring Stromgarde Badges to Captain Nials at Refuge Pointe.",note="Stromgarde badges drop from the Syndicate in Stromgarde",opt=true},
     {a="T",q=40512,t="Eperius Needs Grains",n="Tarral Holk",x=21.9,y=62.6,z="Arathi Highlands",el=34.4,note="Tarral Holk in Gallant Square"},

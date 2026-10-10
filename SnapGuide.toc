@@ -24,11 +24,10 @@ Routes\a30_ashenvale.lua
 Routes\a31_wetlands.lua
 Routes\a32_hillsbrad.lua
 Routes\a34_arathi.lua
-Routes\a35_alterac.lua
+Routes\a35_grimreaches.lua
 Routes\a35_stv.lua
 Routes\a36_stv.lua
 Routes\a37_dustwallow.lua
-Routes\a38_desolace.lua
 Routes\a38_badlands.lua
 Routes\a39_swamp.lua
 Routes\a40_stv.lua

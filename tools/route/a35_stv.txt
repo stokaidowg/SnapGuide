@@ -1,6 +1,6 @@
 ROUTE a35_stv | Stranglethorn Vale | 35 | 37
 ZONE Duskwood
-F Darkshire | Fly from Southshore to Darkshire
+F Darkshire | Fly from Ironforge to Darkshire (through Stormwind)
 
 ZONE Stranglethorn Vale
 # [[ Rebel Camp and Nesingwary's Expedition ]]

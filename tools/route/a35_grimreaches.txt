@@ -1,0 +1,96 @@
+ROUTE a35_grimreaches | Grim Reaches | 34 | 37
+# Patch 1.18's new zone east of the Wetlands (its quests come from tools/extra-db.lua).
+# Dun Kithas is the Alliance town; East Ridge Outpost and Baggoth's Wall hold the north.
+# Left out: Gemstone of Naraz part 2 (41851, south of Loch Modan), Crystal Clear Impression
+# (41879, no known spot), Zarm'geth Stronghold (elite: 41880, 41884), Ore Must Flow's return
+# trip (41878), the Grim Hollow chain (41800+, 37-44), To Cure the Withered (high elf start).
+
+# [[ Ironforge and the High Pass ]]
+ZONE Ironforge
+F Ironforge | Ride to Refuge Pointe and fly to Ironforge
+A 41846 | Senator Barin Redstone sends you to the new Wildhammer town in the Grim Reaches
+ZONE Loch Modan
+F Thelsamar
+ZONE Grim Reaches
+R 51.0,57.0 | Dun Kithas | Ride north-east out of Loch Modan through the High Pass
+
+# [[ Dun Kithas ]]
+P Krangosh Thunderwind | Dun Kithas
+T 41846 | Magistrate Hurdam Toughhand
+A 41862 | The Dragonmaw War: for Mountaineer Steelwind in the north
+A 41871 | Crier Sternhand, in the square
+T 41871 | Back to the Magistrate
+A 41869 | Harfig Ironbrow
+A 41885 | Fisherman Nudrew on the north side of town, by Lake Kithas
+A 41857 | Marshal Rorin Palepike
+A 41855 | Foreman Kegg Boulderboots
+A 41850 | Prospector Dustshoulder
+A 41874 | Sorgan Trustgrip: the books are far north, in Stolgaz Keep. You'll get there later
+T 41893 | Sorgan again, if you picked up the Ancient Wildhammer Tome in the Wetlands @opt
+
+# [[ Round Dun Kithas ]]
+C 41885 | Razortooth Crocolisks in Lake Kithas, just north of town
+C 41857 | Miregill murlocs along the east shore drop the scales
+C 41869 | Grimscale Raptors and Screechers south-west of town
+T 41885
+T 41857
+A 41858
+T 41869
+A 41870 | The Thrashers are up north: you'll pass them later
+
+# [[ The south-east: the murlocs, Sal'Galaz Mines, Slatebeard's Forge, Barleycrest ]]
+C 41858 | Back to the murlocs. Gargill the Butcher is at the south end of their shore
+C 41855 | Bonesplitter troggs in the Sal'Galaz Mines, south-east
+C 41850 | The left part of the Gemstone of Naraz drops in the same mines @together
+A 41876 | Farleg Slatebeard at Slatebeard's Forge, just west of the mines
+A 41886 | Mountaineer Barleycrest at the farmstead further south
+C 41886 | Greater Brown Recluses in the swamp south-west of the farm
+T 41886
+
+# [[ Back to Dun Kithas ]]
+T 41858 | Marshal Rorin Palepike
+T 41855 | Foreman Kegg
+A 41856 | The tougher troggs deeper in the mines @opt
+T 41850 | Prospector Dustshoulder
+T 41876 | Magistrate Hurdam Toughhand
+A 41877 | For Lord Nazgrim Redbrand in Ironforge: hand it in when you leave
+C 41856 | Skullthumpers and Geomancers at the back of the Sal'Galaz Mines @opt
+T 41856 @opt
+
+# [[ The north: Baggoth's Wall and East Ridge Outpost ]]
+A 41872 | Mountaineer Lightboots at Baggoth's Wall, north-west of town
+A 41875
+T 41862 | Mountaineer Steelwind at East Ridge Outpost
+A 41863
+A 41866 | Garlin Redbrand, next to Steelwind
+A 41867 | Dorthas Read, at the outpost's west end
+C 41874 | Wildhammer Archive Books in the ruins of Stolgaz Keep, north-west of the outpost
+C 41863 | Dragonmaw orcs east of Stolgaz Keep drop the sigils
+C 41866 | Supply crates in Geth'kar, the Dragonmaw camp in the same hills @together
+C 41875 | Stone Bricks lie in the ruins round Geth'kar
+C 41867 | Corrupted oozes further north-east
+C 41870 | Grimscale Thrashers on the way back south to the outpost
+T 41863 | Mountaineer Steelwind
+A 41864
+T 41866
+T 41867
+A 41868
+C 41864 | The Banner of Baggoth is on top of Baggoth Rampart, north of the wall
+C 41868 | Corrupted wraiths in the tunnels west, towards Grim Batol
+T 41864
+A 41865
+C 41865 | The Dragonmaw warband north of the outpost; Grathok Flamehand leads it, west
+T 41865
+C 41872 | Stonehide Boars roam round the outpost
+T 41872 | Mountaineer Lightboots
+T 41875
+
+# [[ Dun Kithas hand-ins, then out ]]
+T 41868 | Magistrate Hurdam Toughhand
+T 41874 | Sorgan Trustgrip
+T 41870 | Harfig Ironbrow
+ZONE Loch Modan
+F Thelsamar | From Dun Kithas
+ZONE Ironforge
+F Ironforge
+T 41877 | Lord Nazgrim Redbrand

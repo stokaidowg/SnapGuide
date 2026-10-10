@@ -31,6 +31,7 @@ T 299
 # [[ Dragonmaw Retreat: a dungeon for 25-34 that needs a group. Skip these if you're not going ]]
 A 41749 | Kixxle on the main road, east of Whelgar's Excavation @opt
 A 41751 | Nydiszanz at the Dragonmaw Gates, further east @opt
+A 41893 | The Ancient Wildhammer Tome lies south of the Dragonmaw camp: it's for Sorgan Trustgrip in the Grim Reaches, where you go at 34 @opt
 C 41750 | Gowlfang is the first boss. The entrance should be a cave by the Dragonmaw camp south-east of the Green Belt (not yet checked in game) @opt @xy=67.7,62.5
 C 41749 | Crumbling Stone Golems inside drop the runestone @opt @together @xy=67.7,62.5
 C 41751 | Free Searistrasz: kill the Dragonmaw Whelps and him @opt @together @xy=67.7,62.5

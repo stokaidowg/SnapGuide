@@ -45,5 +45,3 @@ T 564
 T 505
 T 510
 T 511
-A 512 | Syndicate signet rings: you'll get them in Strahnbrad after Arathi
-A 500 | Crushridge ogres in the Alterac Mountains, also after Arathi

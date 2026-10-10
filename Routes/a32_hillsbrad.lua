@@ -38,7 +38,5 @@ SnapGuide:Route({
     {a="T",q=505,t="Syndicate Assassins",n="Magistrate Henry Maleb",x=48.1,y=59.1,z="Hillsbrad Foothills",el=33.5},
     {a="T",q=510,t="Foreboding Plans",n="Magistrate Henry Maleb",x=48.1,y=59.1,z="Hillsbrad Foothills",el=33.5},
     {a="T",q=511,t="Encrypted Letter",n="Loremaster Dibbs",x=50.6,y=57.1,z="Hillsbrad Foothills",el=33.5,o="Bring the Encrypted Letter to Loremaster Dibbs in Southshore."},
-    {a="A",q=512,t="Noble Deaths",n="Magistrate Henry Maleb",x=48.1,y=59.1,z="Hillsbrad Foothills",el=33.5,sk=0.14,ql=36,pre={510},note="Syndicate signet rings: you'll get them in Strahnbrad after Arathi"},
-    {a="A",q=500,t="Crushridge Bounty",n="Marshal Redpath",x=49.5,y=58.7,z="Hillsbrad Foothills",el=33.5,note="Crushridge ogres in the Alterac Mountains, also after Arathi"},
   },
 })
