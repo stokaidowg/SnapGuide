@@ -542,7 +542,8 @@ function G:GroupMobs(route, s)
 end
 
 -- objective progress lines ("Crawler Meat: 3/8") for a quest in your log
-local function Progress(title)
+-- sep: between objectives (", " by default, a line break for one per line)
+local function Progress(title, sep)
   local entry = G.log[title]
   if not entry then return nil end
   local parts = {}
@@ -551,7 +552,7 @@ local function Progress(title)
     if text then table.insert(parts, (finished and "|cff60ff60" or "|cffffd100") .. text .. "|r") end
   end
   if table.getn(parts) == 0 then return nil end
-  return table.concat(parts, ", ")
+  return table.concat(parts, sep or ", ")
 end
 
 -- quiet: no error messages (the automatic tries below); returns true when something was targeted
@@ -813,6 +814,11 @@ function G:OnRefresh(route, s)
     f.step.text:SetText(Describe(s) .. Coords(s))
     note = s.note or ""
     if s.a == "C" and s.o and note == "" then note = s.o end
+    -- the quest's objectives from your log, one per line: "Ghoul Fang: 3/10"
+    if s.a == "C" then
+      local progress = Progress(s.t, "\n")
+      if progress then note = (note ~= "" and (note .. "\n") or "") .. progress end
+    end
   end
   local missing = self.missing[s.key]
   if missing then
