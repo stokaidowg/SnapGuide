@@ -554,14 +554,15 @@ local function Progress(title)
   return table.concat(parts, ", ")
 end
 
-function G:Target()
+-- quiet: no error messages (the automatic tries below); returns true when something was targeted
+function G:Target(quiet)
   local s = self.step
   if not s then return end
   local names = {}
   if s.n and (s.a == "A" or s.a == "T" or s.a == "P" or s.a == "S" or s.a == "B") then table.insert(names, s.n) end
   for _, m in ipairs(self:GroupMobs(self.route, s)) do table.insert(names, m) end
   if table.getn(names) == 0 then
-    UIErrorsFrame:AddMessage("Nothing to target for this step", 1, 0.3, 0.3, 1, 2)
+    if not quiet then UIErrorsFrame:AddMessage("Nothing to target for this step", 1, 0.3, 0.3, 1, 2) end
     return
   end
   for k = 1, table.getn(names) do
@@ -569,14 +570,44 @@ function G:Target()
     local name = names[cycle]
     TargetByName(name, true)
     if UnitExists("target") and UnitName("target") == name and not UnitIsDead("target") then
-      if s.a == "C" and not GetRaidTargetIndex("target") then
+      if not GetRaidTargetIndex("target") then
         pcall(SetRaidTarget, "target", ICONS[nextIcon])
         nextIcon = math.mod(nextIcon, 8) + 1
       end
-      return
+      return true
     end
   end
-  UIErrorsFrame:AddMessage("No " .. table.concat(names, " / ") .. " nearby", 1, 0.3, 0.3, 1, 2)
+  if not quiet then UIErrorsFrame:AddMessage("No " .. table.concat(names, " / ") .. " nearby", 1, 0.3, 0.3, 1, 2) end
+end
+
+-- [[ auto target ]] --
+-- When the guide moves on to a step with an NPC or mobs, target (and mark) them by itself.
+-- Only out of combat and when you have no living target, so it never takes over a fight or
+-- something you picked; it tries every 2 s until it finds one (they're often out of range
+-- when the step starts), then leaves you alone for that step. db.autoTarget = false turns it
+-- off (/sg autotarget).
+local autoKey, autoNext, shownKey = nil, 0, nil
+
+local function Targetable(s)
+  if not s then return false end
+  if s.n and not s.obj and (s.a == "A" or s.a == "T" or s.a == "P" or s.a == "S" or s.a == "B") then return true end
+  return table.getn(G:GroupMobs(G.route, s)) > 0
+end
+
+function G:AutoTarget(now)
+  if self.db.autoTarget == false or not autoKey or not self.step or self.step.key ~= autoKey then return end
+  if now < autoNext then return end
+  autoNext = now + 2
+  if UnitAffectingCombat("player") or UnitIsDeadOrGhost("player") then return end
+  if UnitExists("target") and not UnitIsDead("target") then return end
+  if self:Target(true) then autoKey = nil end
+end
+
+function G:AutoTargetCommand(arg)
+  if arg == "on" then self.db.autoTarget = nil
+  elseif arg == "off" then self.db.autoTarget = false
+  else self.db.autoTarget = self.db.autoTarget == false and nil or false end
+  G.Print("targeting the next step's NPC or mobs by itself: " .. (self.db.autoTarget == false and "|cffff8080off|r" or "|cff60ff60on|r"))
 end
 
 -- [[ route menu ]] --
@@ -739,6 +770,11 @@ end
 
 function G:OnRefresh(route, s)
   if not f then return end
+  -- a new step: target its NPC or mobs once they're about
+  if s and s.key ~= shownKey then
+    shownKey = s.key
+    if Targetable(s) then autoKey, autoNext = s.key, 0 else autoKey = nil end
+  end
   if not route then
     f.title:SetText("SnapGuide")
     f.step.text:SetText("No routes loaded")

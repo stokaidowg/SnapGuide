@@ -611,6 +611,7 @@ events:SetScript("OnUpdate", function()
   if G.route and G.step and (G:CheckArrival(G.route, G.step) or G:CheckNPC(G.step, dt)) then
     G:Refresh()
   end
+  if G.AutoTarget then G:AutoTarget(GetTime()) end
 end)
 
 -- [[ /sg ]] --
@@ -636,6 +637,8 @@ SlashCmdList["SNAPGUIDE"] = function(msg)
   elseif cmd == "arrow" then
     db.arrow = db.arrow == false
     G.Print("arrow " .. (db.arrow == false and "hidden" or "shown") .. ". |cffffffff/sg arrow config|r for size and text.")
+  elseif cmd == "autotarget" or cmd == "auto" then
+    if G.AutoTargetCommand then G:AutoTargetCommand(string.lower(rest or "")) end
   elseif cmd == "fade" then
     if G.FadeCommand then G:FadeCommand() end
   elseif cmd == "talents" or cmd == "talent" then
@@ -668,6 +671,7 @@ SlashCmdList["SNAPGUIDE"] = function(msg)
   else
     G.Print("|cffffffff/sg|r show/hide   |cffffffff/sg skip|r tick the current step   |cffffffff/sg back|r undo")
     G.Print("|cffffffff/sg target|r target the step's NPC or mob   |cffffffff/sg routes|r list   |cffffffff/sg route <n>|r jump to one")
+    G.Print("|cffffffff/sg autotarget|r target and mark the next step's NPC or mobs by itself (on/off, on by default)")
     G.Print("|cffffffff/sg arrow|r hide or show the arrow   |cffffffff/sg reset|r clear all ticks and skips")
     G.Print("|cffffffff/sg ahead|r skip side quests when you're ahead of the guide (on/off, or |cffffffff/sg ahead 1|r = stay 1 level ahead)")
     G.Print("|cffffffff/sg fade|r in dungeons and raids, show the guide only on mouse-over (on by default)")
