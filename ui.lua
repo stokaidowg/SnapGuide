@@ -582,10 +582,9 @@ end
 
 -- [[ auto target ]] --
 -- When the guide moves on to a step with an NPC or mobs, target (and mark) them by itself.
--- Only out of combat and when you have no living target, so it never takes over a fight or
--- something you picked; it tries every 2 s until it finds one (they're often out of range
--- when the step starts), then leaves you alone for that step. db.autoTarget = false turns it
--- off (/sg autotarget).
+-- One try per step, found or not (the user asked: no repeated tries). It waits until you're
+-- out of combat with no living target, so it never takes over a fight or something you
+-- picked. db.autoTarget = false turns it off (/sg autotarget).
 local autoKey, autoNext, shownKey = nil, 0, nil
 
 local function Targetable(s)
@@ -597,10 +596,10 @@ end
 function G:AutoTarget(now)
   if self.db.autoTarget == false or not autoKey or not self.step or self.step.key ~= autoKey then return end
   if now < autoNext then return end
-  autoNext = now + 2
   if UnitAffectingCombat("player") or UnitIsDeadOrGhost("player") then return end
   if UnitExists("target") and not UnitIsDead("target") then return end
-  if self:Target(true) then autoKey = nil end
+  autoKey = nil
+  self:Target(true)
 end
 
 function G:AutoTargetCommand(arg)
