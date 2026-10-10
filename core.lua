@@ -300,6 +300,26 @@ function G:SetRoute(id)
   self:Refresh()
 end
 
+-- [[ which quests to pick up ]] --
+-- For add-ons that accept quests by themselves (SnapUI's automation asks this): true when the
+-- route you're on, or the next one, still has a pickup for a quest with this title (not done,
+-- not skipped or passed over), false when it hasn't, nil when the guide has no say (window
+-- hidden, no route).
+function G:WantsQuest(title)
+  if not db or not title or db.hidden then return nil end
+  local route = self:CurrentRoute()
+  if not route then return nil end
+  local routes = { route, self.routes[route.index + 1] }
+  for _, r in ipairs(routes) do
+    for _, s in ipairs(r.steps) do
+      if s.a == "A" and s.t == title and self:Applies(s) and not self:StepDone(r, s) then
+        return true
+      end
+    end
+  end
+  return false
+end
+
 local function ReportOverskip(list)
   if not list then return end
   if table.getn(list.ahead) > 0 then
