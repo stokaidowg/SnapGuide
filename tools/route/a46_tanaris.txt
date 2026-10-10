@@ -49,7 +49,7 @@ A 3161 | Marvon Rivetseeker, at his camp in the middle of the desert
 C 40590 | Glasshide basilisks south of Marvon's camp
 C 40589 | Baggle's Turbo-Scan Filtronomitor, further south-west
 C 3161 | Sandfury trolls at the Gahz'ridian ruins in the south-west drop the ornaments
-C 5863 | Dunemaul ogres right next to the ruins; Gor'marok the Ravager leads them
+C 5863 | Dunemaul ogres right next to the ruins; Gor'marok the Ravager leads them @together
 C 40592 | The Harmonized Sand, in the western dunes on your way back north
 T 3161 | Marvon Rivetseeker
 T 1691 | Chief Engineer Bilgewhizzle

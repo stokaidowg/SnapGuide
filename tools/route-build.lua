@@ -22,6 +22,8 @@
 --   @together (on a C step: do it at the same time as the C step just before; the guide
 --   shows them as one step and targets both quests' mobs)
 --   @keep (on an A step: never skip this quest when you're ahead of the route)
+--   @also=101;2880 (on a C step: other quests whose items or kills you'll get here too, like
+--   "any skeleton" drops; the guide shows their progress under the step as well)
 
 local CLASSBIT = { Warrior = 1, Paladin = 2, Hunter = 4, Rogue = 8, Priest = 16, Shaman = 64, Mage = 128, Warlock = 256, Druid = 1024 }
 local RACEBIT = { Human = 1, Dwarf = 4, ["Night Elf"] = 8, NightElf = 8, Gnome = 64, ["High Elf"] = 512, HighElf = 512 }
@@ -451,6 +453,13 @@ function Build(spec)
           for m in string.gmatch(flags.mobs, "[^;]+") do table.insert(step.mobs, (string.gsub(m, "_", " "))) end
         end
         step.opt = flags.opt and true or nil
+        if flags.also then
+          step.also = {}
+          for id in string.gmatch(flags.also, "%d+") do
+            id = tonumber(id)
+            if not Q[id] then warn(lineNo, "@also: no quest " .. id) else table.insert(step.also, id) end
+          end
+        end
         if flags.together then
           local prev = steps[table.getn(steps)]
           if step.a ~= "C" or not prev or prev.a ~= "C" then
@@ -507,6 +516,7 @@ function Build(spec)
     end
     if s.note and s.note ~= "" then table.insert(p, "note=" .. lstr(s.note)) end
     if s.opt then table.insert(p, "opt=true") end
+    if s.also and table.getn(s.also) > 0 then table.insert(p, "also={" .. table.concat(s.also, ",") .. "}") end
     if s.obj then table.insert(p, "obj=true") end
     if s.w then table.insert(p, "w=true") end
     if s.class then table.insert(p, "class=" .. lstr(s.class)) end

@@ -30,8 +30,8 @@ C 1011 | The Bottle of Disease is in the Dor'Danil Barrow Den, south-west of For
 C 1027 | Rotting Slimes in the same barrow den drop the Iron Pommel @xy=76.0,73.0 @mobs=Rotting_Slime
 C 40808 | Horde peons, scouts, deforesters and grunts at the Horde camp south of Forest Song
 C 40796 | Six horns from each satyr camp: Bleakheart, Xavian and Felmusk
+C 1140 | The second Highborne soul: the Circle of Imprisonment in Satyrnaar, one of the satyr camps @xy=81.6,48.6 @nomobs @together
 C 40842 | Demon Fall Canyon, south-west of Forest Song: infernals, felguards and lashers
-C 1140 | The second Highborne soul: the Circle of Imprisonment in Satyrnaar, south-west of Forest Song @xy=81.6,48.6 @nomobs
 T 1011
 A 1012
 T 40808

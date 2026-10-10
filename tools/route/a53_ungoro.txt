@@ -27,7 +27,7 @@ C 3881 | The Crate of Foodstuffs is in the same part of the crater
 C 4284 | Power crystals lie all over the crater floor: pick them up as you go
 C 4290 | Threshadons in the lake for the carcass pieces @opt
 C 4503 | Diemetradons and pterrordaxes in the south
-C 3882 | Dinosaur bones lie in the south-west
+C 3882 | Dinosaur bones lie on the ground where the diemetradons roam @together
 C 3881 | The Research Equipment is nearby, in the south-west
 A 974 | Krakle, by the fire plume ridge in the middle of the crater @opt
 C 974 | Use his thermometer at the fire plume @opt

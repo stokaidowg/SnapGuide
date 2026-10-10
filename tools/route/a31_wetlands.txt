@@ -21,7 +21,7 @@ T 471 @opt
 A 295 | Ormer Ironbraid
 A 299
 C 295 | Mottled Scytheclaws and Razormaws west of the excavation
-C 299 | The fragments drop from the raptors and lie around the dig site
+C 299 | The fragments drop from the same raptors and lie around the dig site @together
 T 295
 A 296
 C 296 | Sarltooth lives on top of the hill, west

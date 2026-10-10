@@ -28,18 +28,18 @@ A 3442
 
 # [[ The Cauldron and the south ]]
 C 7727 | Incendosaurs east of Thorium Point
-C 7729 | Dark Iron slavers and taskmasters round the Cauldron
-C 7722 | The Secret Plans: Fiery Flux, in the Cauldron
-C 7701 | Overseer Maltorius, deep in the Slag Pit @opt
 C 7723 | Heavy War Golems south of the Cauldron
+C 3442 | The same golems drop the Golem Oil; fire elementals nearby for the Heart of Flame @together
 C 7728 | The Smithing Tuyere and the Lookout's Spyglass lie in the camps south of the Cauldron
-C 3442 | Fire elementals for the Heart of Flame and golems for the Golem Oil, same area
 C 7724 | Greater Lava Spiders west of Kalaran
 
 # [[ Kalaran, then Thorium Point ]]
 T 3442 | Kalaran Windblade
 A 3443
 C 3443 | Dark Iron dwarves in the Cauldron carry the Thorium Plated Daggers
+C 7729 | The slavers and taskmasters there count for the job opportunity @together
+C 7722 | The Secret Plans: Fiery Flux, in the Cauldron @together
+C 7701 | Overseer Maltorius, deep in the Slag Pit @opt
 T 3443 | Kalaran Windblade
 T 7723 | Hansel Heavyhands at Thorium Point
 T 7724

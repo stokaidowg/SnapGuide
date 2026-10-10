@@ -26,7 +26,7 @@ SnapGuide:Route({
     {a="T",q=40043,t="The Missing Robot",n="Gigno Flaxwhisker",x=45.3,y=90.9,z="Azshara",el=52.7,note="Gigno Flaxwhisker"},
     {a="A",q=40044,t="The Analyzation Chip",n="Gigno Flaxwhisker",x=45.3,y=90.9,z="Azshara",el=52.7,pre={40043}},
     {a="C",q=40063,t="In Need of Sprugbolts",x=49.0,y=96.1,z="Azshara",el=52.7,mobs={"Storm Bay Warrior","Storm Bay Oracle"},o="Bring 5 Sprugbolts to Jubie Gadgetspring at the Flaxwhisker Front.",note="Sprugbolts from the clockwork creatures east of the camp"},
-    {a="C",q=40242,t="Shell Shields",x=51.2,y=95.3,z="Azshara",el=52.8,mobs={"Coralshell Lurker"},o="Gather 3 Pristine Lurker Shells for Genzil Spannerlight at the Flaxwhisker Front",note="Lurkers on the shore further east for the shells"},
+    {a="C",q=40242,t="Shell Shields",x=51.2,y=95.3,z="Azshara",el=52.8,mobs={"Coralshell Lurker"},o="Gather 3 Pristine Lurker Shells for Genzil Spannerlight at the Flaxwhisker Front",note="Lurkers on the same stretch of shore for the shells",w=true},
     {a="C",q=40044,t="The Analyzation Chip",x=64.8,y=95.0,z="Azshara",el=52.8,mobs={"Analyzor 53G"},o="Retrieve the Analyzation Chip from Analyzor 53G near the Rethress Sanctum.",note="The Analyzation Chip is on the south-east coast"},
     {a="T",q=40044,t="The Analyzation Chip",n="Gigno Flaxwhisker",x=45.3,y=90.9,z="Azshara",el=52.9,note="Gigno Flaxwhisker"},
     {a="A",q=40045,t="Lorie's Logbook",n="Gigno Flaxwhisker",x=45.3,y=90.9,z="Azshara",el=52.9,pre={40044}},

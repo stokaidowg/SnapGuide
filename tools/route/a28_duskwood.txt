@@ -22,7 +22,7 @@ A 177 @opt
 A 377 @opt
 
 # [[ East: Tranquil Gardens, the Rotting Orchard, Roland's Doom ]]
-C 56 | Skeletons in the Tranquil Gardens Cemetery south-east of Darkshire
+C 56 | Skeletons in the Tranquil Gardens Cemetery south-east of Darkshire. Keep their Skeleton Fingers for the Totem of Infliction @also=101
 C 177 | The Insane Ghoul patrols the cemetery @opt @together
 C 173 | Nightbane Shadow Weavers in the Rotting Orchard
 T 173 | Calor in Darkshire
@@ -40,7 +40,7 @@ C 222 | Roland's Doom, south-east
 A 70054 | Watcher Paige by the road in the middle of the woods
 T 163 | Jitters at Raven Hill
 A 5
-C 57 | Skeletons north of Raven Hill
+C 57 | Skeletons north of Raven Hill; their fingers count for the Totem of Infliction too @also=101
 C 70054 | Grave Robbers around the Raven Hill graveyard
 T 165 | Abercrombie in the hut at Raven Hill Cemetery
 A 148
@@ -78,7 +78,7 @@ T 149 | Blind Mary, south-east of Darkshire
 A 154
 T 154
 A 157
-C 93 | Spiders in the woods north of Darkshire drop the legs
+C 93 | Spiders in the woods north of Darkshire drop the legs, and the Vials of Spider Venom for the Totem of Infliction @also=101
 T 93
 A 240
 
@@ -94,7 +94,7 @@ A 70057
 T 240 | Jitters at Raven Hill
 T 157 | Abercrombie at Raven Hill Cemetery
 A 158
-C 58 | Plague Spreaders down in the Dawning Wood Catacombs, near the cemetery
+C 58 | Plague Spreaders down in the Dawning Wood Catacombs, near the cemetery. Ghouls here drop the Ghoul Fangs for the Totem of Infliction @also=101
 T 230 | Sven at the Hushed Bank
 A 262
 T 70057

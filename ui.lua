@@ -820,6 +820,21 @@ function G:OnRefresh(route, s)
       if progress then note = (note ~= "" and (note .. "\n") or "") .. progress end
     end
   end
+  -- quests you pick things up for along the way (@also): their progress too, while unfinished
+  local alsoLines = {}
+  for _, g in ipairs(group) do
+    for _, q in ipairs(g.also or {}) do
+      local title = self:QuestTitle(q)
+      local entry = title and self.log[title]
+      if entry and not entry.complete and self:Owner(route, title) == q then
+        local progress = Progress(title, "\n")
+        if progress then table.insert(alsoLines, "|cff4fc3f7Also for " .. title .. ":|r\n" .. progress) end
+      end
+    end
+  end
+  if table.getn(alsoLines) > 0 then
+    note = (note ~= "" and (note .. "\n") or "") .. table.concat(alsoLines, "\n")
+  end
   local missing = self.missing[s.key]
   if missing then
     note = "|cffff8080" .. s.n .. " isn't here. The server may have moved or removed them.|r " .. note

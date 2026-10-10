@@ -34,7 +34,7 @@ T 40606 | Loania
 T 80392
 A 40607
 A 80393
-C 80393 | Witherbark Sadists and Broodguards at the troll village south of the lodge
+C 80393 | Witherbark Sadists and Broodguards at the troll village south of the lodge @also=2880
 C 40607 | The Witherbark Tablets are in the same village @together
 T 80393 | Voldana at Quel'Danil Lodge
 
@@ -59,7 +59,7 @@ C 41146 | Silvermane wolves just south-east of Aerie Peak for the hides
 T 41146 | Drakk Stonehand
 C 2877 | Oozes at Skulk Rock, far to the east
 C 41140 | The Etched Mithril Shards come from the same oozes @together
-C 60072 | Vilebranch Scalpers and Soothsayers east of Skulk Rock
+C 60072 | Vilebranch Scalpers and Soothsayers east of Skulk Rock @also=2880
 T 60072 | Drakin Swiftaxe
 T 2877 | Fraggar Thundermantle
 T 41140 | Brok Thunderforge

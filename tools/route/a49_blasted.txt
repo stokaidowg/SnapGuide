@@ -30,10 +30,10 @@ T 40429
 
 # [[ The beasts south of the keep, first pass ]]
 C 2585 | Scorpoks for the pincers, vultures for the gizzards, boars for the lungs
-C 2581 | Snickerfangs for the jowls, plus more boar lungs and scorpok pincers
-C 2583 | Basilisks for the brains, plus lungs and pincers
-C 2601 | Basilisk brains and vulture gizzards
-C 2603 | Snickerfang jowls and vulture gizzards
+C 2581 | Snickerfangs for the jowls, plus more boar lungs and scorpok pincers @together
+C 2583 | Basilisks for the brains, plus lungs and pincers @together
+C 2601 | Basilisk brains and vulture gizzards @together
+C 2603 | Snickerfang jowls and vulture gizzards @together
 T 2581 | Bloodmage Drazial
 A 2582
 T 2583

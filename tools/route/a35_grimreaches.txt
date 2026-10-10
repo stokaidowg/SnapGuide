@@ -67,7 +67,7 @@ A 41867 | Dorthas Read, at the outpost's west end
 C 41874 | Wildhammer Archive Books in the ruins of Stolgaz Keep, north-west of the outpost
 C 41863 | Dragonmaw orcs east of Stolgaz Keep drop the sigils
 C 41866 | Supply crates in Geth'kar, the Dragonmaw camp in the same hills @together
-C 41875 | Stone Bricks lie in the ruins round Geth'kar
+C 41875 | Stone Bricks lie in the ruins round Geth'kar @together
 C 41867 | Corrupted oozes further north-east
 C 41870 | Grimscale Thrashers on the way back south to the outpost
 T 41863 | Mountaineer Steelwind

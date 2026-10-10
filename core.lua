@@ -8,7 +8,8 @@
 -- P flight path, S set hearth, B buy, L reach level, G grind, N note), q = quest id,
 -- t = title/place, n = NPC (obj = n is an object, not an NPC), x/y/z = map spot, mobs = targetable names, o = objective text,
 -- note, opt = optional, class/race = only for that class/race, lvl = level for L steps,
--- w = do this C step together with the C step before it (shown as one step),
+-- w = do this C step together with the C step before it (shown as one step), also = (C steps)
+-- other quests whose items or kills you get here too (their progress is shown as well),
 -- pre = (A steps) quests needed first, el = the level the route expects you to be at this step, sk = (A steps) the quest can be
 -- skipped when you're ahead of the route, worth sk levels; ql = that quest's level.
 
@@ -81,13 +82,15 @@ G.inLog = {}
 G.collapsed = false
 
 -- titles[title] = quest ids with that title, in route order across every route;
--- objs[qid] = objective text, which routes carry for quests sharing a title
+-- objs[qid] = objective text, which routes carry for quests sharing a title;
+-- names[qid] = the quest's title
 function G:Titles()
   if not self.titles then
-    self.titles, self.objs = {}, {}
+    self.titles, self.objs, self.names = {}, {}, {}
     for _, r in ipairs(self.routes) do
       for _, s in ipairs(r.steps) do
         if s.q and s.t then
+          self.names[s.q] = s.t
           local list = self.titles[s.t] or {}
           self.titles[s.t] = list
           local seen = false
@@ -99,6 +102,12 @@ function G:Titles()
     end
   end
   return self.titles
+end
+
+-- a quest's title from its id (any route that has a step for it)
+function G:QuestTitle(qid)
+  self:Titles()
+  return self.names[qid]
 end
 
 -- lower case letters and digits only, without the database's $N/$B placeholders

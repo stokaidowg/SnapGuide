@@ -38,7 +38,7 @@ A 40044
 
 # [[ East along the coast ]]
 C 40063 | Sprugbolts from the clockwork creatures east of the camp
-C 40242 | Lurkers on the shore further east for the shells
+C 40242 | Lurkers on the same stretch of shore for the shells @together
 C 40044 | The Analyzation Chip is on the south-east coast
 T 40044 | Gigno Flaxwhisker
 A 40045
