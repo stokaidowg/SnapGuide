@@ -2,13 +2,13 @@
 SnapGuide:Route({
   id = "a35_alterac", title = "Alterac Mountains", min = 34, max = 35,
   steps = {
-    {a="R",t="Strahnbrad",x=60.0,y=40.0,z="Alterac Mountains",el=34.6,note="Ride north from Arathi's west gate into the Alterac Mountains"},
-    {a="C",q=512,t="Noble Deaths",x=61.1,y=43.4,z="Alterac Mountains",el=34.7,mobs={"Syndicate Spy","Syndicate Wizard","Syndicate Sentry","Gravis Slipknot"},o="Bring 7 Alterac Signet Rings to Magistrate Maleb in Southshore.",note="Syndicate in and around Strahnbrad drop the signet rings"},
-    {a="C",q=500,t="Crushridge Bounty",x=49.8,y=43.0,z="Alterac Mountains",el=34.8,mobs={"Crushridge Ogre","Crushridge Brute","Crushridge Mauler","Crushridge Mage","Crushridge Enforcer"},o="Gather 9 Dirty Knucklebones from Crushridge ogres in the Alterac Mountains.  Bring them to Marshal Redpath in Southshore.",note="Crushridge ogres west of Strahnbrad drop the knucklebones"},
-    {a="H",t="Southshore",el=34.8},
-    {a="T",q=512,t="Noble Deaths",n="Magistrate Henry Maleb",x=48.1,y=59.1,z="Hillsbrad Foothills",el=34.8},
-    {a="T",q=500,t="Crushridge Bounty",n="Marshal Redpath",x=49.5,y=58.7,z="Hillsbrad Foothills",el=34.9},
-    {a="A",q=504,t="Crushridge Warmongers",n="Marshal Redpath",x=49.5,y=58.7,z="Hillsbrad Foothills",el=34.9,sk=0.16,ql=40,pre={500},opt=true},
-    {a="T",q=661,t="Hints of a New Plague?",n="Phin Odelic",x=50.3,y=59.0,z="Hillsbrad Foothills",el=34.9,o="Find Phin Odelic in Southshore.",note="Phin Odelic, if you finished the plague chain",opt=true},
+    {a="R",t="Strahnbrad",x=60.0,y=40.0,z="Alterac Mountains",el=34.5,note="Ride north from Arathi's west gate into the Alterac Mountains"},
+    {a="C",q=512,t="Noble Deaths",x=61.1,y=43.4,z="Alterac Mountains",el=34.6,mobs={"Syndicate Spy","Syndicate Wizard","Syndicate Sentry","Gravis Slipknot"},o="Bring 7 Alterac Signet Rings to Magistrate Maleb in Southshore.",note="Syndicate in and around Strahnbrad drop the signet rings"},
+    {a="C",q=500,t="Crushridge Bounty",x=49.8,y=43.0,z="Alterac Mountains",el=34.7,mobs={"Crushridge Ogre","Crushridge Brute","Crushridge Mauler","Crushridge Mage","Crushridge Enforcer"},o="Gather 9 Dirty Knucklebones from Crushridge ogres in the Alterac Mountains.  Bring them to Marshal Redpath in Southshore.",note="Crushridge ogres west of Strahnbrad drop the knucklebones"},
+    {a="H",t="Southshore",el=34.7},
+    {a="T",q=512,t="Noble Deaths",n="Magistrate Henry Maleb",x=48.1,y=59.1,z="Hillsbrad Foothills",el=34.7},
+    {a="T",q=500,t="Crushridge Bounty",n="Marshal Redpath",x=49.5,y=58.7,z="Hillsbrad Foothills",el=34.8},
+    {a="A",q=504,t="Crushridge Warmongers",n="Marshal Redpath",x=49.5,y=58.7,z="Hillsbrad Foothills",el=34.8,sk=0.16,ql=40,pre={500},opt=true},
+    {a="T",q=661,t="Hints of a New Plague?",n="Phin Odelic",x=50.3,y=59.0,z="Hillsbrad Foothills",el=34.8,o="Find Phin Odelic in Southshore.",note="Phin Odelic, if you finished the plague chain",opt=true},
   },
 })

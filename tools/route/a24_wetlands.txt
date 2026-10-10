@@ -81,26 +81,23 @@ A 40568 | For Gakin in Stormwind: keep it until you're there
 A 469 | Einar Stonegrip on the road north-east
 T 463
 A 276
-A 40679 | Gowlfang's friendly Mosshide camp, next to the Greenwarden
-A 40682
-A 40683
+# Gowlfang's quests (40679 Reunite Tribe-Tribe!, 40680, 40681) are gone: patch 1.18 moved him into
+# Dragonmaw Retreat as a boss. Grimbite at the camp gives Gowlfang's Defeat (41750) for that
+# dungeon instead; it isn't in the pfQuest-octo database yet.
+A 40682 | Dagdag Mossbelt at the friendly Mosshide camp, next to the Greenwarden
+A 40683 | Bogpaw Truthsay, same camp. If he isn't there either, skip this: he may have gone to Dragonmaw Retreat with Gowlfang
 C 484 | Young crocolisks along the river by the Green Belt
 C 276 | Mosshide gnolls in the camps south-east of the Green Belt
-C 40679 @together
 T 276
 A 277
-T 40679
-A 40680
 C 40683 | Whelps on the hills east of the Green Belt
 C 40682 | Razormaw raptors on Raptor Ridge, north-east
 T 40682
 T 40683
 C 277 | The Mosshide camps north of Whelgar's Excavation
-C 40680 | The Mosshide Alpha leads the northern camp @opt @together
 C 470 | Black Oozes north of the Mosshide camps
 C 55200 | The same oozes, and Simple Wood lying around @together
 T 277 | Back to the Greenwarden
-T 40680 @opt
 
 # [[ Back west ]]
 H Hawk's Vigil
