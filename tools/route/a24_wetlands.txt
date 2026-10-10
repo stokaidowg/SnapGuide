@@ -2,6 +2,8 @@ ROUTE a24_wetlands | Wetlands | 24 | 27
 # picked up on the way: Tower of Althalaxx part 5 (Delgren, a24), Charred Vale (Stonetalon),
 # the Glowing Shard (Wailing Caverns)
 LOG 1140 1057 6981
+# Gowlfang's Defeat (Grimbite, for Dragonmaw Retreat), picked up at the Green Belt camp
+LOG 41750
 
 # [[ Auberdine: Wailing Caverns turn-ins before the boat ]]
 ZONE Darkshore

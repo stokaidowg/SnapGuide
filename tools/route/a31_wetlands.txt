@@ -6,6 +6,7 @@ R 5.0,62.5 | Menethil Harbor | Off the boat from Auberdine
 T 943 | Archaeologist Flagongut, for the Blackfathom Deeps items @opt
 A 289
 A 472
+A 41756 | Captain Stoutfist, for the Dragonmaw Retreat dungeon later in the Wetlands. Hand it in when you pass through Menethil on the way to Theramore @opt
 C 471 | Giant crocolisks along the coast by the Lost Fleet @opt
 C 289 | Cursed sailors and marines on the wrecks of the Lost Fleet, up the coast
 T 289 | First Mate Fitzsimmons in Menethil
@@ -26,6 +27,17 @@ A 296
 C 296 | Sarltooth lives on top of the hill, west
 T 296
 T 299
+
+# [[ Dragonmaw Retreat: a dungeon for 25-34 that needs a group. Skip these if you're not going ]]
+A 41749 | Kixxle on the main road, east of Whelgar's Excavation @opt
+A 41751 | Nydiszanz at the Dragonmaw Gates, further east @opt
+C 41750 | Gowlfang is the first boss. The entrance should be a cave by the Dragonmaw camp south-east of the Green Belt (not yet checked in game) @opt @xy=67.7,62.5
+C 41749 | Crumbling Stone Golems inside drop the runestone @opt @together @xy=67.7,62.5
+C 41751 | Free Searistrasz: kill the Dragonmaw Whelps and him @opt @together @xy=67.7,62.5
+C 41756 | Dragonmaw Veterans all through the dungeon @opt @together @xy=67.7,62.5
+T 41750 | Grimbite at the Mosshide camp in the Green Belt @opt
+T 41749 | Kixxle @opt
+T 41751 | Nydiszanz @opt
 
 # [[ Dun Modr and the Thandol Span ]]
 T 472 | Longbraid the Grim at Dun Modr, the dwarven ruin north

@@ -31,6 +31,8 @@ for (const f of [
 }
 run(fs.readFileSync(__dirname + '/pfdb-helpers.lua', 'utf8'), 'helpers');
 run(fs.readFileSync(__dirname + '/pfdb-helpers2.lua', 'utf8'), 'helpers2');
+// quests the server has that the database doesn't yet (see the file)
+run(fs.readFileSync(__dirname + '/extra-db.lua', 'utf8'), 'extra-db');
 
 module.exports = { lua: (code) => run(code, 'query') };
 

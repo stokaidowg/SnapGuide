@@ -1,6 +1,9 @@
 ROUTE a37_dustwallow | Dustwallow Marsh | 37 | 39
 ZONE Dustwallow Marsh
 N Getting to Theramore | Fly from Booty Bay to Menethil Harbor (through Stormwind and Ironforge), then take the boat to Theramore
+ZONE Wetlands
+T 41756 | Captain Stoutfist in Menethil, while you wait for the boat (Dragonmaw Retreat) @opt
+ZONE Dustwallow Marsh
 
 # [[ Theramore Isle ]]
 R 70.3,50.6 | Theramore docks | Off the boat at Theramore

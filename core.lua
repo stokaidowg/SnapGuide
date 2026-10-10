@@ -654,3 +654,6 @@ SlashCmdList["SNAPGUIDE"] = function(msg)
     G.Print("|cffffffff/sg talents|r the talent plan (|cffffffff/sg talents off|r to stop the advice)")
   end
 end
+
+-- update notices (version.lua)
+if SnapVersions then SnapVersions.Register("SnapGuide") end

@@ -3,6 +3,7 @@ SnapGuide:Route({
   id = "a37_dustwallow", title = "Dustwallow Marsh", min = 36, max = 38,
   steps = {
     {a="N",t="Getting to Theramore",el=36.5,note="Fly from Booty Bay to Menethil Harbor (through Stormwind and Ironforge), then take the boat to Theramore"},
+    {a="T",q=41756,t="To Crush The Dragonmaw",n="Captain Stoutfist",x=9.9,y=57.5,z="Wetlands",el=36.5,note="Captain Stoutfist in Menethil, while you wait for the boat (Dragonmaw Retreat)",opt=true},
     {a="R",t="Theramore docks",x=70.3,y=50.6,z="Dustwallow Marsh",el=36.5,note="Off the boat at Theramore"},
     {a="A",q=40413,t="Old Bryan's Food Delivery",n="Dockmaster Lorman",x=70.3,y=50.6,z="Dustwallow Marsh",el=36.5,sk=0.03,ql=35,note="Dockmaster Lorman"},
     {a="A",q=40412,t="Delivery Overdue",n="Dockmaster Lorman",x=70.3,y=50.6,z="Dustwallow Marsh",el=36.5,sk=0.03,ql=35},

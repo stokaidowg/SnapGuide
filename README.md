@@ -11,6 +11,8 @@ A step-by-step **Alliance** levelling guide, **level 18 to 40**, built from the 
 - **An arrow** to the next spot, following walkable paths around mountains and water.
 - **Targeting**: one key targets the mobs or NPC the current step needs. Quests you can do together are shown as one step.
 - **Ahead of the route?** It quietly skips small quests that wouldn't be worth your time.
+- **Missing NPCs**: the quest database can be older than the server. If you stand where a quest giver should be and they aren't there, the guide says so and offers **Skip quest** (or **Keep it**). It never skips anything by itself.
+- **Dragonmaw Retreat** (Wetlands dungeon, 25-34): optional steps for its quests at level 31.
 - **Extras**: a talent advisor (Retribution Paladin only, for now), an arrow back to your corpse when you die, and the window fades inside dungeons until you mouse over it.
 
 Routes: Darkshore → Ashenvale → Stonetalon → Wetlands → Redridge/Duskwood → Ashenvale → Hillsbrad → Arathi → Alterac → Stranglethorn → Dustwallow → Desolace/Badlands → Swamp of Sorrows → Stranglethorn (to 40).
@@ -34,7 +36,11 @@ Routes: Darkshore → Ashenvale → Stonetalon → Wetlands → Redridge/Duskwoo
 
 ## For developers
 
-`tools/` holds the route scripts (`tools/route/*.txt`) and the Node.js scripts that build `Routes/*.lua` and `Paths.lua` from the pfQuest database and the game's terrain. See `tools/README.md`. They expect the game in `H:/Games/OctoWoW`: change the paths in `tools/pfdb.js` and `tools/terrain.js`. The release zip leaves `tools/` out.
+`tools/extra-db.lua` adds quests the pfQuest-octo database doesn't have yet (Dragonmaw Retreat). `tools/` holds the route scripts (`tools/route/*.txt`) and the Node.js scripts that build `Routes/*.lua` and `Paths.lua` from the pfQuest database and the game's terrain. See `tools/README.md`. They expect the game in `H:/Games/OctoWoW`: change the paths in `tools/pfdb.js` and `tools/terrain.js`. The release zip leaves `tools/` out.
+
+## Update notices
+
+If someone in your party, raid or guild has a newer version of one of these add-ons, you get one line in chat with a link to its download page. To do that, the add-ons send each other their version numbers (only those) over the game's add-on channel.
 
 ## Licence
 
