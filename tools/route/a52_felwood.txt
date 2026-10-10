@@ -1,0 +1,58 @@
+ROUTE a52_felwood | Felwood | 52 | 55
+# South to north: Emerald Sanctuary (the Jadefire satyrs, Jaedenar, the entropic beasts),
+# then Talonbranch Glade (Turtle's quests) and Timbermaw Hold, whose tunnel leads on into
+# Winterspring.
+# Left out: quests whose turn-in is at the other end of Felwood from their objectives
+# (Further Corruption, Cleansing Felwood and the salves, Vana's ooze, the blood elves),
+# Niremius Darkwind's chain (several parts have no known spots), Impsy's chain, the corrupted
+# plant quests (need Cenarion Plant Salve), cloth turn-ins, the Jaedenar chain after Forces of
+# Jaedenar (moonwell water, the shadow lords: 55-58).
+
+# [[ Getting there ]]
+ZONE Ashenvale
+F Astranaar | From Gadgetzan fly to Astranaar
+ZONE Felwood
+R 51.0,82.0 | Emerald Sanctuary | Ride north out of Ashenvale into Felwood; the Emerald Sanctuary is on the road, in the south
+
+# [[ Emerald Sanctuary ]]
+A 8460 | Grazle: the Timbermaw furbolgs' trust starts here
+A 5155 | Greta Mosshoof
+A 5156 | Taronn Redfeather
+A 4421 | Eridan Bluewind
+A 41072 | Sentinel Briariel: for Yohan Wildwalker at Talonbranch Glade, in the north
+
+# [[ The south and Jaedenar ]]
+C 8460 | Deadwood furbolgs just south of the Sanctuary
+T 8460 | Grazle
+A 8462 | For Nafien at Timbermaw Hold, in the far north
+C 4421 | Jadefire satyrs west of the Sanctuary; Xavathras leads them
+C 5155 | Jaedenar's cultists, guardians, adepts and hounds, north-west
+C 5156 | Entropic beasts and horrors north of Jaedenar
+T 4421 | Eridan Bluewind, back at the Sanctuary
+T 5155 | Greta Mosshoof
+T 5156 | Taronn Redfeather
+
+# [[ Talonbranch Glade ]]
+R 62.0,24.0 | Talonbranch Glade | Follow the road north
+P Mishellena | Talonbranch Glade
+T 41072 | Yohan Wildwalker
+A 41073
+A 41070 | Taloras Gladewind
+A 41071 | Golhine the Hooded
+
+# [[ The north ]]
+C 41070 | Unhallowed branches from the Irontree treants, west
+T 41073 | Marlonias Shademoon, in the same woods
+A 41074
+C 41071 | Angerclaw grizzlies north-east of the glade
+C 41074 | Marlonias' Notes, further north
+T 41074 | Yohan Wildwalker
+T 41070 | Taloras Gladewind
+T 41071 | Golhine the Hooded
+
+# [[ Timbermaw Hold ]]
+T 8462 | Nafien, at the mouth of the Timbermaw tunnel in the far north
+A 8461
+C 8461 | Deadwood furbolgs right outside the tunnel
+T 8461 | Nafien
+A 8465 | For Salfa, at the Winterspring end of the tunnel

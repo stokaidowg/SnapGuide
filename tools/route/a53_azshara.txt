@@ -1,0 +1,51 @@
+ROUTE a53_azshara | Azshara | 52 | 55
+# Turtle's Azshara. Talrendis Point (the Alliance camp in the west), then the gnomes of the
+# Flaxwhisker Front on the south coast and their long chain along the coast to the east.
+# Left out: Archmage Xylem's, Ogtinc's, Keeper Iselus', Kim'jael's and Akh Z'ador's chains
+# (the far north and east, several parts with no known spots), the Rethress naga (56),
+# the Fizz Disk and Gyronautical Compass (crafted parts), the reports to Ironforge.
+
+# [[ Getting there ]]
+ZONE Ashenvale
+F Astranaar | Fly from Talonbranch Glade to Astranaar
+ZONE Azshara
+R 11.5,78.0 | Talrendis Point | Ride east out of Ashenvale into Azshara; Talrendis Point is just over the border
+
+# [[ Talrendis Point ]]
+P Jarrodenus | Talrendis Point
+A 5535 | Loh'atu
+A 5536
+C 5535 | Highborne apparitions and lichlings in the ruins north-east of the camp
+C 5536 | Haldarr satyrs further north @together
+T 5535 | Loh'atu
+T 5536
+
+# [[ The Flaxwhisker Front ]]
+A 40040 | Fendo Wobblefizz at the gnome camp on the south coast
+T 40040 | Gigno Flaxwhisker, next to him
+A 40041
+C 40041 | Mistwing harpies north-west of the camp, near Magus Bromley, for their horns
+T 40041 | Gigno Flaxwhisker
+A 40042
+A 40063 | Jubie Gadgetspring
+A 40242 | Genzil Spannerlight
+A 40062 | Blimo Gadgetspring: Azure Scales from the blue dragonkin, 55 @opt
+C 40062 | Blue dragonkin west of the camp @opt
+T 40042 | Magus Bromley, north-west of the camp
+A 40043
+T 40043 | Gigno Flaxwhisker
+A 40044
+
+# [[ East along the coast ]]
+C 40063 | Sprugbolts from the clockwork creatures east of the camp
+C 40242 | Lurkers on the shore further east for the shells
+C 40044 | The Analyzation Chip is on the south-east coast
+T 40044 | Gigno Flaxwhisker
+A 40045
+T 40045 | Lorie Gearwatch, next to him
+A 40046
+C 40046 | The Flight Logbook, far along the south-east coast
+T 40046 | Gigno Flaxwhisker
+T 40063 | Jubie Gadgetspring
+T 40242 | Genzil Spannerlight
+T 40062 | Blimo Gadgetspring @opt

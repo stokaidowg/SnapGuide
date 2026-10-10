@@ -1,0 +1,101 @@
+ROUTE a47_feralas | Feralas | 47 | 50
+# Thalanaar (east edge, Turtle's quests) and Feathermoon Stronghold (an island off the west
+# coast: the boat leaves from the Forgotten Coast). East quests first, the island, a loop
+# through the south and middle, then a sweep back east that ends at Thalanaar; fly to
+# Feathermoon for the last hand-ins.
+# Left out: the Wild Leather and Morrowgrain chains (crafted items), Freedom for All Creatures
+# (timed escort), Zapped Giants (no spot), the Darnassus/Gilneas/Un'Goro/Tanaris errands,
+# the Highborne goblin chain (needs Mithril Tubes), Harness of Chimaeran (no spot), Gregan's
+# Videre Elixir (it's for a Winterspring chain).
+
+# [[ Thousand Needles to Thalanaar ]]
+ZONE Feralas
+R 89.0,45.0 | Thalanaar | From Gadgetzan ride north-west through Thousand Needles; Thalanaar is just inside Feralas
+P Thyssiana | Thalanaar
+A 41039 | Sentinel Glensha
+A 41040 | Commander Anashya Starfall
+A 41041
+A 41049 | Bethelon Wildwhisper
+A 41043 | Larodar Wildwhisper
+
+# [[ The chimaera roost ]]
+T 41049 | Velos Sharpstrike, south of Thalanaar
+A 41050
+C 41050 | Chimaeras round his camp
+T 41050
+A 41051
+
+# [[ West across Feralas ]]
+C 41040 | Woodpaw gnolls in the camps west of Velos
+C 41039 | Wolves north-west of Thalanaar for the meat
+C 41041 | The Grim Mallet, in the Grimtotem camp just west of the wolves
+C 41051 | Hippogryphs to the south-west for their meat
+C 41043 | The Tear of Zalmos lies in the Ruins of Isildien, nearby
+A 7721 | Zorbin Fandazzle on the Forgotten Coast, by the boat to Feathermoon
+R 31.0,40.0 | Feathermoon Stronghold | Take the boat from the Forgotten Coast dock out to the island
+
+# [[ Feathermoon Stronghold ]]
+P Fyldren Moonfeather | Feathermoon Stronghold
+S Innkeeper Shyria | Feathermoon Stronghold
+A 2866 | Shandris Feathermoon
+A 4124 | Latronicus Moonspear
+T 4124 | Ginro Hearthkindle
+A 4125
+A 2982 | Angelas Moonbreeze
+A 2821 | Pratt McGrubben
+A 60020 | Latronicus Moonspear again: Lady Janira, in the Ruins of Solarsal @opt
+
+# [[ The Ruins of Solarsal and the Hatecrest ]]
+T 2866 | The Solarsal Gazebo, at the south end of the island
+A 2867
+T 2867 | Shandris Feathermoon
+A 3130
+T 3130 | Latronicus Moonspear
+A 2869
+C 2869 | Hatecrest naga round the Ruins of Solarsal drop the scales
+C 60020 | Lady Janira is in the same ruins @opt @together
+T 2869 | Latronicus Moonspear
+T 60020 @opt
+A 2870
+C 2870 | Lord Shalzaru, on the isle south of the ruins, has the relic
+T 2870
+A 2871
+T 2871 | Vestia Moonspear
+
+# [[ Back on the mainland: the south and middle ]]
+C 7721 | Water elementals along the coast north of Zorbin drop the cores
+T 7721 | Zorbin Fandazzle
+C 2821 | Yetis in the hills south-east of the coast for the thick hides
+T 4125 | The courier's wrecked row boat, on the south coast
+A 4127
+R 31.0,40.0 | Feathermoon Stronghold | Boat back from the Forgotten Coast
+T 4127 | Ginro Hearthkindle
+A 4129
+T 4129 | Quintis Jonespyre
+A 4130
+T 4130 | Ginro Hearthkindle
+A 4131
+T 2821 | Pratt McGrubben
+A 7733
+
+# [[ East again, ending at Thalanaar ]]
+C 7733 | Rage Scar yetis in the north
+R 60.0,65.0 | Gordunni camps | The Gordunni shamans and warlocks for The High Wilderness are in these ogre camps
+T 4131 | The Woodpaw camp in the south-east: a pile of large leather backpacks
+A 4135
+T 4135 | A Zukk'ash pod in the Writhing Deep, south of the gnoll camp
+A 4265
+T 41051 | Velos Sharpstrike
+C 2982 | The Gordunni brutes, north-west of Thalanaar, finish The High Wilderness @xy=74.0,34.0 @mobs=Gordunni_Brute
+T 41039 | Sentinel Glensha in Thalanaar
+T 41040 | Commander Anashya Starfall
+T 41041
+T 41043 | Larodar Wildwhisper
+
+# [[ Feathermoon hand-ins ]]
+F Feathermoon Stronghold
+T 4265 | Ginro Hearthkindle
+A 4266
+T 4266 | Shandris Feathermoon
+T 2982 | Angelas Moonbreeze
+T 7733 | Pratt McGrubben

@@ -1,0 +1,123 @@
+ROUTE a41_gilneas | Gilneas | 41 | 45
+# OctoWoW/Turtle's Gilneas (39-46). Ravenshire is the Alliance town (flight path to
+# Southshore). Two loops from there: north, centre and west first (the Greymane story), then
+# the south coast and Blackthorn's Camp. Left out: quests whose items or targets have no
+# known spot (mostly the Gilneas City dungeon: 40940-40943, 40908, 40935, 41033, 41112,
+# 41113, 40966), Vagrant Supplies and Supplementing Rations (turn-ins far north), Spitecrest
+# Decursions (two named nagas at opposite ends of the coast), and the STV/Theramore errands.
+
+# [[ Southshore, then across to Gilneas ]]
+ZONE Hillsbrad Foothills
+F Southshore | Fly from Booty Bay to Southshore
+A 40968 | Marshal Redpath: the Greymane Wall is open and the Alliance is helping the Gilnean rebels
+ZONE Gilneas
+R 58.4,67.6 | Ravenshire | Ravenshire is the port on Gilneas' east coast, west across the water from Hillsbrad. Swim over from the Hillsbrad coast, or ride in through the Greymane Wall from Silverpine. After this you can fly Southshore - Ravenshire
+
+# [[ Ravenshire ]]
+T 40968 | Lord Darius Ravenwood
+T 40964 | Sergeant Arbington, if you brought the Theramore message @opt
+P Maria Galwest | Ravenshire
+A 40948 | Baron Caliban Silverlaine: the start of the Greymane story
+A 40924 | Silverlaine again: his signet is out west, you'll pass it later
+A 40926 | Corporal Ranworth
+A 40852 | Sergeant Arbington
+
+# [[ North and centre ]]
+C 40852 | Brol'ok ogres at their mound, north-west of Ravenshire
+A 40907 | Aliattan Anderson's ghost, west of the mound
+A 41034 | Bearbane, at the hunters' camp in the middle of Gilneas
+A 41035 | Levandra, same camp
+A 41037 | Mustang
+A 41036 | Lurn Five-Pelts
+A 40932 | Donald Rosewick, on the road north
+A 40944 | Councilor Ravencrest at the Vagrant Encampment, far north
+A 40937 | Camp Leader Gethenor
+C 40937 | Nighthowl worgen round the camp carry the shackles
+T 40937
+A 40938
+C 40938 | The Nighthowl Alpha is north-west of the camp
+T 40938
+C 40932 | The spare wagon wheel lies by the road south of the camp
+C 41035 | Matthew Beckett is east of the road
+C 41034 | Duskpelt wolves and Vilewings just south of Beckett: the fur and the pelts
+T 40932 | Donald Rosewick
+A 40933 | For Frell Rosewick at Greyshire, south-west
+C 41037 | Foulhide gnolls west of the road drop the talismans, on your way to Greyshire
+
+# [[ Greyshire and Stillward ]]
+T 40933 | Frell Rosewick
+A 40830 | Father Oblen
+A 40928 | Darrow Shademore
+A 40934 | Brother Elias
+A 40945 | Maxwell Givings
+C 40934 | Skeletons and walking dead in the ruins of Greyshire, north
+C 40830 | The Greyshire Manuscripts lie in the same ruins @together
+C 41036 | Haunted mementos from the same undead @together
+C 40907 | Aliattan Anderson's Journal, south-east of Greyshire
+C 40926 | Bloodclaw worgen west of the hunters' camp
+C 40945 | Snarlclaw prowls the same woods @together
+C 40928 | Foulhide gnolls south of the hunters' camp drop the armbands
+T 40830 | Father Oblen
+T 40934 | Brother Elias
+T 40945 | Maxwell Givings
+T 40928 | Darrow Shademore
+
+# [[ Liam Greymane, west ]]
+T 40948 | Liam Greymane, in hiding west of Greyshire
+A 40949
+C 40949 | The Rust-Covered Key, further west
+T 40949
+A 40950
+
+# [[ The hunters' camp ]]
+T 41036 | Lurn Five-Pelts
+T 40907
+T 41037 | Mustang
+T 41034 | Bearbane
+T 41035 | Levandra
+T 40950 | Tess Greymane, at the camp
+A 40951
+
+# [[ Ravenshire ]]
+T 40951 | Liam Greymane is back in Ravenshire
+A 40952
+T 40944 | Clerk Ebonmere
+T 40926 | Corporal Ranworth
+A 40927
+T 40852 | Sergeant Arbington
+A 40853 | The Staff of Shinban: back in the Brol'ok Mound, on the way to Freyshear Keep
+A 40965 | Narwick Everton, the butcher
+A 40925 | Magistrate Carson
+A 40946 | Dockwatcher Vorren
+A 40967 | Lord Darius Ravenwood
+
+# [[ The south coast and Blackthorn's Camp ]]
+C 40967 | Ravenwood Keep, south of Ravenshire: its ghosts, Custodian Mathias and Sergeant Gately
+C 40946 | Spitecrest naga on the coast at the south tip of Gilneas drop the scales
+C 40965 | Greater Vilewings on the way back north-west
+T 40952 | Moranna Rosenberg at Blackthorn's Camp
+A 40953
+A 41032 | Mother Tanya, same camp
+C 41032 | Hollow Web spiders east of the camp
+C 40925 | The same spiders drop the silk @together
+T 41032
+C 40953 | The Vials of Blood come from the worgen out west
+C 40924 | The Signet of Silverlaine lies near them, further south
+T 40953 | Moranna Rosenberg
+A 40954
+C 40927 | The Bloodclaw Alpha, back west of the hunters' camp, on the way east
+
+# [[ Ravenshire and Freyshear Keep ]]
+T 40954 | Liam Greymane
+A 40955
+T 40927 | Corporal Ranworth
+T 40965 | Narwick Everton
+T 40925 | Magistrate Carson
+T 40946 | Dockwatcher Vorren
+T 40967 | Lord Darius Ravenwood
+T 40924 | Baron Caliban Silverlaine
+C 40853 | The staff is deep in the Brol'ok Mound, north-west of Ravenshire
+C 40955 | Freyshear Keep, north-east of Ravenshire: the Greymane Preservers and Cannoneer Rileson
+T 40955 | Lord Darius Ravenwood
+T 40853 | Sergeant Arbington
+A 40956 | The Greymane Crown is in the Gilneas City dungeon (43-49, needs a group) @opt

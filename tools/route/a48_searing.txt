@@ -1,0 +1,50 @@
+ROUTE a48_searing | Searing Gorge | 48 | 50
+# Thorium Point (the Thorium Brotherhood, on the cliffs in the north-west) and Kalaran
+# Windblade below it. One loop through the Cauldron and the south, back to Thorium Point.
+# Left out: Prayer to Elune and the Suntara Stones (their turn-ins are in Darnassus and
+# Ironforge), the Undermarket chain (it ends in Tanaris), the Torch of Retribution and
+# Obsidion chains (52+), Caught! and Rival Presence (no spots).
+
+# [[ Getting there ]]
+ZONE Loch Modan
+F Thelsamar | From Feathermoon fly to Auberdine, take the boat to Menethil Harbor, then fly to Thelsamar
+ZONE Searing Gorge
+R 38.0,27.0 | Thorium Point | Ride south into the Badlands, then west into the Searing Gorge; Thorium Point is on the north-west cliffs
+
+# [[ Thorium Point ]]
+P Lanie Reed | Thorium Point
+A 7723 | Hansel Heavyhands
+A 7724
+A 7727
+A 7722 | Master Smith Burninate
+A 7728 | The STOLEN poster in Thorium Point
+A 7729 | The JOB OPPORTUNITY poster next to it
+A 7701 | The WANTED poster: Overseer Maltorius is in the Slag Pit, with a lot of guards @opt
+
+# [[ Kalaran Windblade ]]
+A 3441 | Kalaran Windblade, down the path south of Thorium Point
+T 3441
+A 3442
+
+# [[ The Cauldron and the south ]]
+C 7727 | Incendosaurs east of Thorium Point
+C 7729 | Dark Iron slavers and taskmasters round the Cauldron
+C 7722 | The Secret Plans: Fiery Flux, in the Cauldron
+C 7701 | Overseer Maltorius, deep in the Slag Pit @opt
+C 7723 | Heavy War Golems south of the Cauldron
+C 7728 | The Smithing Tuyere and the Lookout's Spyglass lie in the camps south of the Cauldron
+C 3442 | Fire elementals for the Heart of Flame and golems for the Golem Oil, same area
+C 7724 | Greater Lava Spiders west of Kalaran
+
+# [[ Kalaran, then Thorium Point ]]
+T 3442 | Kalaran Windblade
+A 3443
+C 3443 | Dark Iron dwarves in the Cauldron carry the Thorium Plated Daggers
+T 3443 | Kalaran Windblade
+T 7723 | Hansel Heavyhands at Thorium Point
+T 7724
+T 7727
+T 7722 | Master Smith Burninate
+T 7728 | Taskmaster Scrange
+T 7729
+T 7701 | Lookout Captain Lolo Longstriker @opt

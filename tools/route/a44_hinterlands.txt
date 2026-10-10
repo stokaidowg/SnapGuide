@@ -1,0 +1,71 @@
+ROUTE a44_hinterlands | The Hinterlands | 44 | 47
+# Aerie Peak (Wildhammer dwarves) and Quel'Danil Lodge (high elves). West first (the
+# Witherbark trolls, Quel'Danil), then east (owlbeasts, wolves, Skulk Rock), back to Aerie
+# Peak, and one more trip east for the Vilebranch trolls and the Wildhammer rite.
+# Left out: Rhapsody's Kocktail (needs Kalimdor livers), the sprite darter pet chain (starts in
+# Thousand Needles), the murloc tadpole on the far east coast, Jintha'Alor (50+), the
+# Thunderforge chain past the first part (no known spots), The Altar of Zul (no spot).
+
+# [[ Southshore to Aerie Peak ]]
+ZONE Hillsbrad Foothills
+F Southshore | Fly from Ravenshire to Southshore
+ZONE The Hinterlands
+R 14.0,44.0 | Aerie Peak | Ride north-east out of Hillsbrad, past Durnholde Keep, into the Hinterlands. Aerie Peak is on the cliffs just inside
+
+# [[ Aerie Peak ]]
+P Guthrum Thunderfist | Aerie Peak
+A 60071 | Drakin Swiftaxe
+A 2880 | Fraggar Thundermantle: troll necklaces from any troll in the Hinterlands
+A 2877 | Fraggar again
+A 2988 | Gryphon Master Talonaxe
+A 41144 | Doran Steelwing
+A 40664 | Claira Kindfeather
+A 41140 | Brok Thunderforge
+A 40606 | Truk Wildbeard: for Loania at Quel'Danil Lodge
+A 80392 | Lieren: a package for Quel'Danil too
+
+# [[ The Witherbark, west ]]
+C 60071 | Witherbark trolls south-east of Aerie Peak
+C 2988 | The cages are in the same Witherbark camps: open the three of them @together
+C 2880 | Keep the necklaces from every troll you kill @together
+
+# [[ Quel'Danil Lodge ]]
+T 40606 | Loania
+T 80392
+A 40607
+A 80393
+C 80393 | Witherbark Sadists and Broodguards at the troll village south of the lodge
+C 40607 | The Witherbark Tablets are in the same village @together
+T 80393 | Voldana at Quel'Danil Lodge
+
+# [[ Owlbeasts and wolves east of the lodge ]]
+C 41144 | Owlbeasts just east of the lodge drop the feathers
+C 40664 | Silvermane wolves in the same woods @together
+
+# [[ Back to Aerie Peak ]]
+T 60071 | Drakin Swiftaxe
+A 60072
+T 2880 | Fraggar Thundermantle
+T 2988 | Gryphon Master Talonaxe
+T 41144 | Doran Steelwing
+A 41145
+T 41145 | Drakk Stonehand, next to him
+A 41146
+T 40664 | Claira Kindfeather
+T 40607 | Truk Wildbeard
+
+# [[ Out again: the hides, Skulk Rock, the Vilebranch ]]
+C 41146 | Silvermane wolves just south-east of Aerie Peak for the hides
+T 41146 | Drakk Stonehand
+C 2877 | Oozes at Skulk Rock, far to the east
+C 41140 | The Etched Mithril Shards come from the same oozes @together
+C 60072 | Vilebranch Scalpers and Soothsayers east of Skulk Rock
+T 60072 | Drakin Swiftaxe
+T 2877 | Fraggar Thundermantle
+T 41140 | Brok Thunderforge
+A 41147
+T 41147 | Doran Steelwing
+A 41148
+T 41148 | The gravestone in Aerie Peak's graveyard
+A 41149
+T 41149 | Doran Steelwing

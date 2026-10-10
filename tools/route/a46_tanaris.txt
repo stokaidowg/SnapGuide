@@ -1,0 +1,59 @@
+ROUTE a46_tanaris | Tanaris | 46 | 48
+# Gadgetzan (west) and Steamwheedle Port (east). Hand in the two Stranglethorn deliveries,
+# clear the Wastewander bandits and the Southsea pirates, then the desert south of Gadgetzan.
+# Left out: chains whose items have no known spot (Gadgetzan Water Survey and the Noxious
+# Lair chain, Screecher Spirits, Scarab Shells, Fishy Practices, the mithril armour orders,
+# Sprinkle's ingredient), wanted posters, Tooga (escort), errands back to Stranglethorn.
+
+# [[ Getting to Tanaris ]]
+ZONE Dustwallow Marsh
+F Theramore | From Aerie Peak fly to Menethil Harbor (through Ironforge) and take the boat to Theramore, or fly straight to Theramore if you can
+ZONE Tanaris
+R 52.0,28.0 | Gadgetzan | Ride west out of Theramore to the Barrens road, south through the Barrens and Thousand Needles, then across the Shimmering Flats into Tanaris
+
+# [[ Gadgetzan ]]
+P Bera Stonehammer | Gadgetzan
+S Innkeeper Fizzgrimble | Gadgetzan
+T 2864 | Tran'rek, for Krazek in Booty Bay
+A 1690 | Chief Engineer Bilgewhizzle
+A 1707 | Spigot Operator Luglunket
+A 5863 | Andi Lynn
+
+# [[ Waterspring Field, then Steamwheedle Port ]]
+C 1690 | Wastewander thieves and bandits at Waterspring Field, east
+C 1707 | They carry the water pouches @together
+T 2872 | Stoley at Steamwheedle Port, on the north-east coast
+A 2873
+A 8366 | Security Chief Bilgewhizzle
+A 8365 | The Haughty Modiste
+A 40590 | Gelwig Darkbrow
+A 40589 | Baggle Hackrust
+A 40592 | Ginlo Taxxo
+
+# [[ Lost Rigger Cove ]]
+C 8366 | Southsea pirates at Lost Rigger Cove, down the east coast
+C 8365 | Their hats @together
+C 2873 | Stoley's Shipment is in the same cove @together
+T 2873 | Stoley
+T 8366 | Security Chief Bilgewhizzle
+T 8365 | The Haughty Modiste
+
+# [[ Back to Gadgetzan ]]
+T 1690 | Chief Engineer Bilgewhizzle
+A 1691
+T 1707 | Spigot Operator Luglunket
+
+# [[ The desert south of Gadgetzan ]]
+C 1691 | Wastewander rogues, shadow mages and assassins south of Waterspring Field
+A 3161 | Marvon Rivetseeker, at his camp in the middle of the desert
+C 40590 | Glasshide basilisks south of Marvon's camp
+C 40589 | Baggle's Turbo-Scan Filtronomitor, further south-west
+C 3161 | Sandfury trolls at the Gahz'ridian ruins in the south-west drop the ornaments
+C 5863 | Dunemaul ogres right next to the ruins; Gor'marok the Ravager leads them
+C 40592 | The Harmonized Sand, in the western dunes on your way back north
+T 3161 | Marvon Rivetseeker
+T 1691 | Chief Engineer Bilgewhizzle
+T 5863 | Andi Lynn
+T 40590 | Gelwig Darkbrow, back at Steamwheedle Port
+T 40589 | Baggle Hackrust
+T 40592 | Ginlo Taxxo

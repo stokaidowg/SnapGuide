@@ -1,0 +1,28 @@
+ROUTE a57_eplague | Eastern Plaguelands | 56 | 58
+# Darrowshire in the south-west (little Pamela Redpath), then Light's Hope Chapel in the east
+# (the Argent Dawn). Hands in the Everlook and Redpath deliveries from the last routes.
+# Left out: Chromie's Darrowshire chain (Villains/Heroes of Darrowshire need her first),
+# Augustus the Touched, the 60s at Light's Hope (Bonescythe Digs, Betina's samples, the
+# Restless Souls, Smokey's crafted bomb).
+
+# [[ Darrowshire ]]
+ZONE Eastern Plaguelands
+R 36.5,90.8 | Darrowshire | From Chillwind Camp ride north-east across the Western Plaguelands and over the Thondroril River; Darrowshire is just inside the Eastern Plaguelands, in the south
+T 5142 | Pamela Redpath, in the ruins of Darrowshire
+T 5601 @opt
+A 5149
+C 5149 | The pieces of Pamela's Doll lie in the ruined houses around her
+T 5149 | Pamela Redpath
+A 5241
+
+# [[ Light's Hope Chapel ]]
+R 81.0,59.0 | Light's Hope Chapel | Follow the road east across the Eastern Plaguelands
+P Khaelyn Steelwing | Light's Hope Chapel
+T 6030 | Duke Nicholas Zverenhoff @opt
+T 5241 | Carlin Redpath
+A 5211
+C 5211 | Darrowshire spirits in the middle of the Eastern Plaguelands: free them
+T 5211 | Carlin Redpath
+
+# [[ The last levels ]]
+N The guide's quests end here | You'll be somewhere around 57-58. The rest of the way to 60 is dungeons (Blackrock Depths, Scholomance, Stratholme), the Plaguelands' 60 quests, or grinding. Ding!

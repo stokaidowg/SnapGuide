@@ -17,3 +17,16 @@ a37_dustwallow
 a38_badlands
 a39_swamp
 a40_stv
+a41_gilneas
+a44_hinterlands
+a46_tanaris
+a47_feralas
+a48_searing
+a49_blasted
+a50_steppes
+a53_ungoro
+a52_felwood
+a53_azshara
+a55_winterspring
+a56_wplague
+a57_eplague

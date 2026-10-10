@@ -12,6 +12,18 @@ local YARDS = {
   ["Swamp of Sorrows"] = { 2294, 1529 }, ["Stormwind City"] = { 1738, 1158 }, ["Ironforge"] = { 791, 528 },
 }
 
+-- any zone missing above: its size from zones.lua's world bounds { continent, left, right, top, bottom }
+if ZONESRC then
+  local env = { SnapGuide = {} }
+  local chunk = load(ZONESRC, "zones.lua", "t", env)
+  if chunk then
+    chunk()
+    for name, z in pairs(env.SnapGuide.ZONES or {}) do
+      if not YARDS[name] then YARDS[name] = { math.abs(z[2] - z[3]), math.abs(z[4] - z[5]) } end
+    end
+  end
+end
+
 local function Dist(a, b)
   if a.z ~= b.z then return nil end
   local y = YARDS[a.z]

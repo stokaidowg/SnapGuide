@@ -1,8 +1,8 @@
 ## Interface: 11200
 ## Title: |cff4fc3f7Snap|cffffffffGuide
-## Notes: Alliance levelling guide for OctoWoW: step by step routes built from the OctoWoW quest database, with an arrow, quest tracking and targeting.
+## Notes: Alliance levelling guide (18-58) for OctoWoW: step by step routes built from the OctoWoW quest database, with an arrow, quest tracking and targeting.
 ## Author: Stokaido
-## Version: 0.2
+## Version: 0.3
 ## OptionalDeps: SnapUI, pfQuest
 ## SavedVariablesPerCharacter: SnapGuideDB
 
@@ -31,3 +31,16 @@ Routes\a37_dustwallow.lua
 Routes\a38_badlands.lua
 Routes\a39_swamp.lua
 Routes\a40_stv.lua
+Routes\a41_gilneas.lua
+Routes\a44_hinterlands.lua
+Routes\a46_tanaris.lua
+Routes\a47_feralas.lua
+Routes\a48_searing.lua
+Routes\a49_blasted.lua
+Routes\a50_steppes.lua
+Routes\a53_ungoro.lua
+Routes\a52_felwood.lua
+Routes\a53_azshara.lua
+Routes\a55_winterspring.lua
+Routes\a56_wplague.lua
+Routes\a57_eplague.lua

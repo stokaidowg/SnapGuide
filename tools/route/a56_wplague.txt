@@ -1,0 +1,60 @@
+ROUTE a56_wplague | Western Plaguelands | 55 | 58
+# Chillwind Camp (the Argent Dawn and the Alliance, in the south). The Scourge cauldrons send
+# you out to one cauldron at a time and back to the camp; the other quests fit round those
+# trips. Pick up the Call to Arms in Ironforge on the way.
+# Left out: the Annals and Chromie (they need the Darrowshire chain first), Janice Felstone's
+# charm chain (starts in Stormwind), A Plague Upon Thee (no spot), Scholomance and the
+# Fordring chains (dungeon / 58-60), Gahrron's Withering is optional (58).
+
+# [[ Ironforge and the ride north ]]
+ZONE Ironforge
+F Ironforge | From Everlook fly to Rut'theran Village, take the boat to Auberdine and the next one to Menethil Harbor, then fly to Ironforge
+A 5090 | Courier Hammerfall, walking round Ironforge
+ZONE Hillsbrad Foothills
+F Southshore
+ZONE Western Plaguelands
+R 42.7,84.0 | Chillwind Camp | Ride north from Southshore past Tarren Mill and through the Alterac foothills into the Western Plaguelands; Chillwind Camp is in the south
+
+# [[ Chillwind Camp ]]
+P Bibilfaz Featherwhistle | Chillwind Camp
+T 5090 | Commander Ashlam Valorfist
+A 5092
+T 6028 | Argent Officer Pureheart, for Gregor in Everlook @opt
+A 5142 | Marlene Redpath, in the house on Sorrow Hill, north of the camp: for her niece in the Eastern Plaguelands
+A 4984 | Mulgris Deepriver, by the Weeping Cave north-east of Sorrow Hill
+
+# [[ Andorhal's outskirts ]]
+C 5092 | Skeletal flayers and slavering ghouls south of Andorhal
+T 5092 | Commander Ashlam Valorfist
+A 5215
+A 5097
+T 5215 | High Priestess MacDonnell, next to him
+A 5216
+
+# [[ Andorhal and Felstone Field ]]
+C 5097 | Use the beacon at each of Andorhal's four watchtowers
+T 5216 | Felstone Field's cauldron, west of Andorhal: kill Cauldron Lord Bilemaw for the key, then use the cauldron
+A 5217
+C 4984 | Diseased wolves in the north
+T 4984 | Mulgris Deepriver
+A 4985
+C 4985 | Diseased grizzlies in the east
+T 4985 | Mulgris Deepriver
+T 5217 | High Priestess MacDonnell, back at Chillwind Camp
+A 5219
+T 5097 | Commander Ashlam Valorfist
+
+# [[ Dalson's Tears and the Writhing Haunt ]]
+T 5219 | Dalson's Tears' cauldron, north of Andorhal: Cauldron Lord Razarch has the key
+A 5220
+T 5220 | High Priestess MacDonnell
+A 5222
+T 5222 | The Writhing Haunt's cauldron, east: Cauldron Lord Malvinious has the key
+A 5223
+T 5223 | High Priestess MacDonnell
+A 5225 @opt
+T 5225 | Gahrron's Withering's cauldron, further east: Cauldron Lord Soulwrath has the key @opt
+A 5226 @opt
+T 5226 @opt
+A 5237 @opt
+T 5237 | Commander Ashlam Valorfist @opt

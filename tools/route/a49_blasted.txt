@@ -1,0 +1,58 @@
+ROUTE a49_blasted | Blasted Lands | 49 | 51
+# Nethergarde Keep in the north. The two bloodmages' quests all want parts from the same
+# beasts south of the keep (scorpoks, snickerfangs, basilisks, vultures, boars), so there are
+# two passes: the first five quests, then the five that follow them. Plus the garrison
+# armory in the caves north of the keep.
+# Left out: Nethergarde's 53-56 quests (bounties, Dreadweavers, Private Holson, the fel chain),
+# Kum'isha's draenethyst turn-ins (55), Thadius Grimshade's Hinterlands chain.
+
+# [[ Getting there ]]
+ZONE Duskwood
+F Darkshire | Fly from Thorium Point to Darkshire (through Ironforge and Stormwind)
+ZONE Blasted Lands
+R 63.0,17.0 | Nethergarde Keep | Ride east through Deadwind Pass into the Swamp of Sorrows, then south down the road into the Blasted Lands
+
+# [[ Nethergarde Keep ]]
+P Alexandra Constantine | Nethergarde Keep
+A 40428 | Foreman Tanoth
+A 40429
+A 2581 | Bloodmage Drazial
+A 2583
+A 2585
+A 2601 | Bloodmage Lynnore
+A 2603
+
+# [[ The armory caves ]]
+C 40428 | Boulderclaw troggs in the caves north of the keep
+C 40429 | The supply caches are in the same caves @together
+T 40428 | Foreman Tanoth
+T 40429
+
+# [[ The beasts south of the keep, first pass ]]
+C 2585 | Scorpoks for the pincers, vultures for the gizzards, boars for the lungs
+C 2581 | Snickerfangs for the jowls, plus more boar lungs and scorpok pincers
+C 2583 | Basilisks for the brains, plus lungs and pincers
+C 2601 | Basilisk brains and vulture gizzards
+C 2603 | Snickerfang jowls and vulture gizzards
+T 2581 | Bloodmage Drazial
+A 2582
+T 2583
+A 2584
+T 2585
+A 2586
+T 2601 | Bloodmage Lynnore
+A 2602
+T 2603
+A 2604
+
+# [[ Second pass ]]
+C 2582 | The same beasts again: jowls, lungs and pincers
+C 2584 | Lungs, pincers and basilisk brains @together
+C 2586 | Lungs, pincers and vulture gizzards @together
+C 2602 | Basilisk brains and vulture gizzards @together
+C 2604 | Snickerfang jowls and vulture gizzards @together
+T 2582 | Bloodmage Drazial
+T 2584
+T 2586
+T 2602 | Bloodmage Lynnore
+T 2604

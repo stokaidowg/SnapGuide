@@ -1,6 +1,6 @@
 # SnapGuide
 
-A step-by-step **Alliance** levelling guide, **level 18 to 40**, built from the OctoWoW quest database (including OctoWoW/Turtle's custom quests). For **OctoWoW** (the 1.12 client). It may work on Turtle WoW and other 1.12 servers, but it was only made and tried on OctoWoW.
+A step-by-step **Alliance** levelling guide, **level 18 to about 58**, built from the OctoWoW quest database (including OctoWoW/Turtle's custom quests). For **OctoWoW** (the 1.12 client). It may work on Turtle WoW and other 1.12 servers, but it was only made and tried on OctoWoW.
 
 > [!WARNING]
 > **Made with AI.** This add-on was written by an AI (Claude, by Anthropic) using Claude Code. I'm not a programmer: I described what I wanted, played with it on OctoWoW, and reported problems back for the AI to fix. It has automated tests against a simulated WoW API, but some features have only been tried by me, and a few not in game at all yet, so expect bugs. Please report them under **Issues**.
@@ -15,7 +15,11 @@ A step-by-step **Alliance** levelling guide, **level 18 to 40**, built from the 
 - **Patch 1.18 content**: the Grim Reaches at 34-37 (Dun Kithas, the Dragonmaw War, Sal'Galaz Mines), and Dragonmaw Retreat (Wetlands dungeon, 25-34) as optional steps at 31.
 - **Extras**: a talent advisor (Retribution Paladin only, for now), an arrow back to your corpse when you die, and the window fades inside dungeons until you mouse over it.
 
-Routes: Darkshore → Ashenvale → Stonetalon → Wetlands → Redridge/Duskwood → Ashenvale → Wetlands (Dragonmaw Retreat, optional) → Hillsbrad → Arathi → **Grim Reaches** (the 1.18 zone) → Stranglethorn → Dustwallow → Badlands → Swamp of Sorrows → Stranglethorn (to 40).
+Routes:
+- **18-40**: Darkshore → Ashenvale → Stonetalon → Wetlands → Redridge/Duskwood → Ashenvale → Wetlands (Dragonmaw Retreat, optional) → Hillsbrad → Arathi → **Grim Reaches** (the 1.18 zone) → Stranglethorn → Dustwallow → Badlands → Swamp of Sorrows → Stranglethorn
+- **40-58**: **Gilneas** → the Hinterlands → Tanaris → Feralas → Searing Gorge → Blasted Lands → Burning Steppes → Un'Goro → Felwood → **Azshara** (Turtle's) → Winterspring → Western and Eastern Plaguelands
+
+The 40-58 routes are new and nobody has played through them yet: expect the odd step in the wrong order, and use **Skip quest** when a quest giver isn't there. The quests run out around 57-58; the last levels are dungeons or grinding.
 
 ## Requirements
 

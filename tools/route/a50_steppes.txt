@@ -1,0 +1,48 @@
+ROUTE a50_steppes | Burning Steppes | 50 | 53
+# Morgan's Vigil in the south-east. The Firegut ogres and the black dragonkin to the north,
+# Orvak Sternrock's chain (Turtle) out west, then back east for the Hateforge dwarves.
+# Left out: the dungeon quests (Blackrock Depths/Spire: Pyron, Incendius, the Marshals,
+# the senators, Hateforge Brew), the librams (crafted turn-ins), the Tablet and the Heart of
+# the Mountain, Broodling Essence, FIFTY! YEP! (56) and the golem core chain (55, unknown
+# items), errands to Ironforge and Lakeshire.
+
+# [[ Getting there ]]
+ZONE Redridge Mountains
+F Lakeshire | Fly from Nethergarde Keep to Lakeshire
+ZONE Burning Steppes
+R 84.5,68.5 | Morgan's Vigil | Ride north out of Redridge into the Burning Steppes; Morgan's Vigil is just over the border, on the east side
+
+# [[ Morgan's Vigil ]]
+P Borgus Stoutarm | Morgan's Vigil
+A 3823 | Oralius
+A 4182 | Helendis Riverhorn
+A 40459 | Radgan Deepblaze, at the dwarven camp west of the Vigil
+
+# [[ North: ogres and dragonkin ]]
+C 3823 | Firegut ogres north of the Vigil
+C 4182 | Black dragonkin on the hills further north, past the ogres
+T 3823 | Oralius
+A 3824
+T 4182 | Helendis Riverhorn
+
+# [[ The Thaurissan badges, then west for Gor'tesh and the Sternrock stash ]]
+C 40459 | Dark Iron dwarves in the middle of the Steppes carry the Thaurissan Badges
+T 40459 | Orvak Sternrock, back at the dwarven camp
+A 40460
+T 40460
+A 40461
+C 3824 | Gor'tesh, the ogre lord, holds the ruins in the west
+C 40461 | The Sternrock Stash is further west @xy=29.0,44.0
+T 40461 | Orvak Sternrock
+A 40462 | Morgrim Firepike, same camp
+A 40469
+T 3824 | Oralius at Morgan's Vigil
+A 3825
+C 3825 | Plant Gor'tesh's head on a stick at the ogre camp north of the Vigil
+T 3825
+
+# [[ East: Hateforge ]]
+C 40462 | Hateforge Excavators east of the Vigil
+C 40469 | Vilegrip, in the same Hateforge camp @together
+T 40462 | Morgrim Firepike
+T 40469

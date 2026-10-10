@@ -17,3 +17,16 @@ Routes\a37_dustwallow.lua
 Routes\a38_badlands.lua
 Routes\a39_swamp.lua
 Routes\a40_stv.lua
+Routes\a41_gilneas.lua
+Routes\a44_hinterlands.lua
+Routes\a46_tanaris.lua
+Routes\a47_feralas.lua
+Routes\a48_searing.lua
+Routes\a49_blasted.lua
+Routes\a50_steppes.lua
+Routes\a53_ungoro.lua
+Routes\a52_felwood.lua
+Routes\a53_azshara.lua
+Routes\a55_winterspring.lua
+Routes\a56_wplague.lua
+Routes\a57_eplague.lua

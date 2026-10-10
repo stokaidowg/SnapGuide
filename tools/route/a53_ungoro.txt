@@ -1,0 +1,48 @@
+ROUTE a53_ungoro | Un'Goro Crater | 52 | 54
+# Marshal's Refuge in the north of the crater, then one loop round it, clockwise. Gadgetzan and
+# Torwa Pathfinder (just outside the crater, in Tanaris) have a few more.
+# Left out: A-Me 01 (needs a Mithril Casing with no known source), Alien Ecology (no spot), the
+# Bloodpetal Sprouts (needs a Feralas quest first), the Winterspring and Felwood errands, the
+# pylons (they open only after the crystals are handed in: a second lap of the crater).
+
+# [[ Gadgetzan and the way down ]]
+ZONE Tanaris
+F Gadgetzan | From Morgan's Vigil fly to Menethil Harbor (through Ironforge), take the boat to Theramore, then fly to Gadgetzan
+A 4504 | Tran'rek: Super Sticky Tar, from the tar creatures in the crater @opt
+A 4290 | Torwa Pathfinder, by the road down into the crater @opt
+ZONE Un'Goro Crater
+R 44.0,8.0 | Marshal's Refuge | Ride down the slope into the crater and north to the refuge in the cliffs
+
+# [[ Marshal's Refuge ]]
+A 3882 | Spark Nilminer
+A 4503 | Shizzle
+A 4141 | Muigin
+A 3881 | Williden Marshal
+A 4492 | Spraggle Frock: find Ringo, in the middle of the crater @opt
+A 4284 | J.D. Collie, up the path at the back of the refuge
+
+# [[ Round the crater ]]
+C 4141 | Bloodpetal plants in the north-east
+C 3881 | The Crate of Foodstuffs is in the same part of the crater
+C 4284 | Power crystals lie all over the crater floor: pick them up as you go
+C 4290 | Threshadons in the lake for the carcass pieces @opt
+C 4503 | Diemetradons and pterrordaxes in the south
+C 3882 | Dinosaur bones lie in the south-west
+C 3881 | The Research Equipment is nearby, in the south-west
+A 974 | Krakle, by the fire plume ridge in the middle of the crater @opt
+C 974 | Use his thermometer at the fire plume @opt
+T 974 @opt
+T 4492 | Ringo, near the fire plume ridge @opt
+A 4491 | Walk Ringo back to the refuge; use the canteen on him when he faints @opt
+C 4504 | Tar creatures at the Lakkari Tar Pits, north-west @opt
+
+# [[ Marshal's Refuge hand-ins ]]
+T 4491 | Spraggle Frock @opt
+T 4141 | Muigin
+T 3881 | Williden Marshal
+T 4284 | J.D. Collie
+T 4503 | Shizzle
+T 3882 | Spark Nilminer
+ZONE Tanaris
+T 4290 | Torwa Pathfinder @opt
+T 4504 | Tran'rek in Gadgetzan @opt

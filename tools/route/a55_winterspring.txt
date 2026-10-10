@@ -1,0 +1,32 @@
+ROUTE a55_winterspring | Winterspring | 54 | 56
+# Through the Timbermaw tunnel from Felwood, then Everlook (the goblin town in the middle),
+# Starfall Village and Donova Snowden's camp in the west. Everlook's deliveries to the
+# Plaguelands come along to the next routes.
+# Left out: the Starfall Village chain (its first part needs level 53 in Felwood), the Videre Elixir and Toxic Horrors chains (no spots for some items), the Enraged
+# Wildkin (59), the yeti chain past the first part (58), Heavy Earthen Cores, cloth turn-ins.
+
+# [[ The Timbermaw tunnel ]]
+ZONE Felwood
+F Talonbranch Glade | Fly from Talrendis Point to Talonbranch Glade
+T 8465 | Salfa, at the Winterspring end of the Timbermaw tunnel (go through the tunnel, north of the glade)
+ZONE Winterspring
+R 61.0,38.0 | Everlook | Follow the road east to Everlook
+
+# [[ Everlook ]]
+P Maethrya | Everlook
+S Innkeeper Vizzie | Everlook
+A 3783 | Umi Rumplesnicker
+A 6603 | Meggi Peppinrocker: for Donova Snowden, west
+A 6028 | Gregor Greystone: a report for the Argent Dawn in the Plaguelands
+A 6030 | Gregor again: for Duke Nicholas Zverenhoff in the Eastern Plaguelands
+A 5601 | Jessica Redpath: for her sister in the Eastern Plaguelands
+
+# [[ The yetis ]]
+C 3783 | Ice Thistle yetis east of Everlook for the fur
+
+# [[ Donova Snowden ]]
+T 6603 | Donova Snowden, at her camp in the west
+A 5082
+C 5082 | Winterfall furbolgs in the camps east of Donova
+T 5082 | Donova Snowden
+T 3783 | Umi Rumplesnicker, back in Everlook
