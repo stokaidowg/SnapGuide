@@ -7,7 +7,7 @@ ROUTE a48_searing | Searing Gorge | 48 | 50
 
 # [[ Getting there ]]
 ZONE Loch Modan
-F Thelsamar | From Feathermoon fly to Auberdine, take the boat to Menethil Harbor, then fly to Thelsamar
+F Thelsamar | From Feathermoon fly to Auberdine, take the boat to Stormwind Harbor, then fly to Thelsamar (through Ironforge)
 ZONE Searing Gorge
 R 38.0,27.0 | Thorium Point | Ride south into the Badlands, then west into the Searing Gorge; Thorium Point is on the north-west cliffs
 

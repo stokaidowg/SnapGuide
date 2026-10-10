@@ -2,7 +2,7 @@ ROUTE a31_wetlands | Wetlands | 31 | 32
 ZONE Wetlands
 
 # [[ Menethil Harbor and the Lost Fleet ]]
-R 5.0,62.5 | Menethil Harbor | Off the boat from Auberdine
+R 5.0,62.5 | Menethil Harbor | Off the boat in Stormwind Harbor, fly to Menethil Harbor
 T 943 | Archaeologist Flagongut, for the Blackfathom Deeps items @opt
 A 289
 A 472

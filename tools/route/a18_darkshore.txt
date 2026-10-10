@@ -73,6 +73,6 @@ T 4733
 L 20 | You should be level 20 by now. If not, kill a few Thistle Bears on the way south
 T 993 | Volcor is deep in the Blackwood Den, just south of the Grove. The Enchanted Moonstalker Cloak (from Terenthis) lets you sneak past
 A 995 | Take the stealth version: put on the cloak and walk out
-C 995 | Walk out of the den with the cloak on. Terenthis gets the turn-in when you fly back to Auberdine for the Menethil boat @xy=44.8,85.2
+C 995 | Walk out of the den with the cloak on. Terenthis gets the turn-in when you fly back to Auberdine for the boat @xy=44.8,85.2
 A 5321 | Kerlonian Evershade is asleep at the Grove of the Ancients. Accept when you're ready to walk to Ashenvale: he falls asleep on the way, wake him with the Horn of Awakening. Go off the main road to avoid the ambush @xy=44.4,76.4
 R 27.3,35.6 | Maestra's Post, Ashenvale | Walk Kerlonian south along the coast into Ashenvale @zone=Ashenvale

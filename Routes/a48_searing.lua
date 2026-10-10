@@ -2,7 +2,7 @@
 SnapGuide:Route({
   id = "a48_searing", title = "Searing Gorge", min = 48, max = 49,
   steps = {
-    {a="F",t="Thelsamar",el=48.5,note="From Feathermoon fly to Auberdine, take the boat to Menethil Harbor, then fly to Thelsamar"},
+    {a="F",t="Thelsamar",el=48.5,note="From Feathermoon fly to Auberdine, take the boat to Stormwind Harbor, then fly to Thelsamar (through Ironforge)"},
     {a="R",t="Thorium Point",x=38.0,y=27.0,z="Searing Gorge",el=48.5,note="Ride south into the Badlands, then west into the Searing Gorge; Thorium Point is on the north-west cliffs"},
     {a="P",t="Thorium Point",n="Lanie Reed",x=37.9,y=30.9,z="Searing Gorge",el=48.5},
     {a="A",q=7723,t="Curse These Fat Fingers",n="Hansel Heavyhands",x=38.6,y=27.8,z="Searing Gorge",el=48.5,sk=0.11,ql=49,note="Hansel Heavyhands"},

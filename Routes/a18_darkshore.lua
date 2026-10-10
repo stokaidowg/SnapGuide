@@ -60,7 +60,7 @@ SnapGuide:Route({
     {a="L",lvl=20,el=20.1,note="You should be level 20 by now. If not, kill a few Thistle Bears on the way south"},
     {a="T",q=993,t="A Lost Master",n="Volcor",x=45.0,y=85.3,z="Darkshore",el=20.2,o="Find Volcor in Darkshore and give him the Enchanted Moonstalker Cloak.",note="Volcor is deep in the Blackwood Den, just south of the Grove. The Enchanted Moonstalker Cloak (from Terenthis) lets you sneak past"},
     {a="A",q=995,t="Escape Through Stealth",n="Volcor",x=45.0,y=85.3,z="Darkshore",el=20.2,pre={993},note="Take the stealth version: put on the cloak and walk out"},
-    {a="C",q=995,t="Escape Through Stealth",x=44.8,y=85.2,z="Darkshore",el=20.2,o="Escape the Furbolg cave and meet Terenthis in Auberdine.",note="Walk out of the den with the cloak on. Terenthis gets the turn-in when you fly back to Auberdine for the Menethil boat"},
+    {a="C",q=995,t="Escape Through Stealth",x=44.8,y=85.2,z="Darkshore",el=20.2,o="Escape the Furbolg cave and meet Terenthis in Auberdine.",note="Walk out of the den with the cloak on. Terenthis gets the turn-in when you fly back to Auberdine for the boat"},
     {a="A",q=5321,t="The Sleeper Has Awakened",n="Kerlonian Evershade",x=44.4,y=76.4,z="Darkshore",el=20.2,sk=0.13,ql=20,note="Kerlonian Evershade is asleep at the Grove of the Ancients. Accept when you're ready to walk to Ashenvale: he falls asleep on the way, wake him with the Horn of Awakening. Go off the main road to avoid the ambush"},
     {a="R",t="Maestra's Post, Ashenvale",x=27.3,y=35.6,z="Ashenvale",el=20.2,note="Walk Kerlonian south along the coast into Ashenvale"},
   },

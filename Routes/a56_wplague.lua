@@ -2,7 +2,7 @@
 SnapGuide:Route({
   id = "a56_wplague", title = "Western Plaguelands", min = 53, max = 54,
   steps = {
-    {a="F",t="Ironforge",el=53.3,note="From Everlook fly to Rut'theran Village, take the boat to Auberdine and the next one to Menethil Harbor, then fly to Ironforge"},
+    {a="F",t="Ironforge",el=53.3,note="From Everlook fly to Rut'theran Village, take the boat to Auberdine and the next one to Stormwind Harbor, then fly to Ironforge"},
     {a="A",q=5090,t="A Call to Arms: The Plaguelands!",n="Courier Hammerfall",x=55.9,y=81.4,z="Ironforge",el=53.3,o="Seek out Commander Ashlam Valorfist.  His base camp is located at Chillwind Camp, north of the Alterac Mountains.",note="Courier Hammerfall, walking round Ironforge"},
     {a="F",t="Southshore",el=53.3},
     {a="R",t="Chillwind Camp",x=42.7,y=84.0,z="Western Plaguelands",el=53.3,note="Ride north from Southshore past Tarren Mill and through the Alterac foothills into the Western Plaguelands; Chillwind Camp is in the south"},

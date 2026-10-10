@@ -8,7 +8,7 @@ ROUTE a56_wplague | Western Plaguelands | 55 | 58
 
 # [[ Ironforge and the ride north ]]
 ZONE Ironforge
-F Ironforge | From Everlook fly to Rut'theran Village, take the boat to Auberdine and the next one to Menethil Harbor, then fly to Ironforge
+F Ironforge | From Everlook fly to Rut'theran Village, take the boat to Auberdine and the next one to Stormwind Harbor, then fly to Ironforge
 A 5090 | Courier Hammerfall, walking round Ironforge
 ZONE Hillsbrad Foothills
 F Southshore

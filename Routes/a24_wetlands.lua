@@ -10,7 +10,7 @@ SnapGuide:Route({
     {a="X",q=436,t="Ironband's Excavation",el=24.3,note="Same: a long walk for little XP"},
     {a="X",q=1057,t="Reclaiming the Charred Vale",el=24.3,note="Reclaiming the Charred Vale: the guide doesn't go back to Stonetalon"},
     {a="X",q=6981,t="The Glowing Shard",el=24.3,note="The Glowing Shard leads to Ratchet and the Barrens, far off the route"},
-    {a="R",t="Menethil Harbor",x=5.0,y=62.5,z="Wetlands",el=24.3,note="Take the boat from Auberdine to Menethil Harbor"},
+    {a="R",t="Menethil Harbor",x=5.0,y=62.5,z="Wetlands",el=24.3,note="Take the boat from Auberdine to Stormwind Harbor, then fly to Menethil Harbor"},
     {a="P",t="Menethil Harbor",n="Shellei Brondir",x=9.5,y=59.7,z="Wetlands",el=24.3},
     {a="T",q=942,t="The Absent Minded Prospector",n="Archaeologist Flagongut",x=10.8,y=60.4,z="Wetlands",el=24.3,o="Take the mysterious fossil to Archaeologist Flagongut in Menethil Harbor.",note="Archaeologist Flagongut"},
     {a="A",q=943,t="The Absent Minded Prospector",n="Archaeologist Flagongut",x=10.8,y=60.4,z="Wetlands",el=24.3,sk=0.12,ql=24,pre={942},o="Archaeologist Flagongut in Menethil Harbor wants you to bring him the Stone of Relu and Flagongut's Fossil.",note="Stone of Relu and Flagongut's Fossil are in Blackfathom Deeps: you run it at 30, back in Ashenvale",opt=true},

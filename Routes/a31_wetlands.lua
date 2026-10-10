@@ -2,7 +2,7 @@
 SnapGuide:Route({
   id = "a31_wetlands", title = "Wetlands", min = 31, max = 32,
   steps = {
-    {a="R",t="Menethil Harbor",x=5.0,y=62.5,z="Wetlands",el=31.4,note="Off the boat from Auberdine"},
+    {a="R",t="Menethil Harbor",x=5.0,y=62.5,z="Wetlands",el=31.4,note="Off the boat in Stormwind Harbor, fly to Menethil Harbor"},
     {a="T",q=943,t="The Absent Minded Prospector",n="Archaeologist Flagongut",x=10.8,y=60.4,z="Wetlands",el=31.4,o="Archaeologist Flagongut in Menethil Harbor wants you to bring him the Stone of Relu and Flagongut's Fossil.",note="Archaeologist Flagongut, for the Blackfathom Deeps items",opt=true},
     {a="A",q=289,t="The Cursed Crew",n="First Mate Fitzsimmons",x=10.9,y=59.6,z="Wetlands",el=31.4,pre={288}},
     {a="A",q=472,t="Fall of Dun Modr",n="Harlo Barnaby",x=10.8,y=55.9,z="Wetlands",el=31.4,sk=0.02,ql=25},

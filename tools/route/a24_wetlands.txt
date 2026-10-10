@@ -20,8 +20,8 @@ X 6981 | The Glowing Shard leads to Ratchet and the Barrens, far off the route
 
 ZONE Wetlands
 
-# [[ Menethil Harbor: off the boat from Auberdine ]]
-R 5.0,62.5 | Menethil Harbor | Take the boat from Auberdine to Menethil Harbor
+# [[ Menethil Harbor ]]
+R 5.0,62.5 | Menethil Harbor | Take the boat from Auberdine to Stormwind Harbor, then fly to Menethil Harbor
 P Shellei Brondir | Menethil Harbor
 T 942 | Archaeologist Flagongut
 A 943 | Stone of Relu and Flagongut's Fossil are in Blackfathom Deeps: you run it at 30, back in Ashenvale @opt

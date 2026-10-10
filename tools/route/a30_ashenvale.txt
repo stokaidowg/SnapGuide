@@ -4,7 +4,7 @@ F Stormwind | Fly from Darkshire to Stormwind
 T 1652 | Duthorian Rall: Sense Undead and the Bastion of Stormwind shield @Paladin
 T 399 | Baros Alexston in Cathedral Square, just outside the Cathedral of Light @opt
 A 1653 | The Test of Righteousness: its parts need Shadowfang Keep and the Deadmines, but it ends in Verigan's Fist. Take it if you'll run those dungeons @Paladin @opt
-N Getting to Ashenvale | Fly to Menethil Harbor (through Ironforge), take the boat to Auberdine, then fly to Astranaar
+N Getting to Ashenvale | Take the boat from Stormwind Harbor to Auberdine, then fly to Astranaar
 
 ZONE Ashenvale
 F Astranaar
@@ -65,4 +65,4 @@ T 1035 | Pelturas in Astranaar
 T 1140 | Delgren the Purifier at Maestra's Post, west of Astranaar
 C 943 | Blackfathom Deeps (needs a group): the entrance is in the water at the Zoram Strand, far north-west. Flagongut's Fossil lies inside, and the Stone of Relu drops in there too @opt @xy=14.2,14.0 @nomobs
 
-F Auberdine | Then the boat to Menethil Harbor
+F Auberdine | Then the boat to Stormwind Harbor, for the Wetlands

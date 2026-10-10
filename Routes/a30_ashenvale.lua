@@ -6,7 +6,7 @@ SnapGuide:Route({
     {a="T",q=1652,t="The Tome of Valor",n="Duthorian Rall",x=50.5,y=47.5,z="Stormwind City",el=30.1,o="Speak to Duthorian Rall in Stormwind.",note="Duthorian Rall: Sense Undead and the Bastion of Stormwind shield",class="Paladin"},
     {a="T",q=399,t="Humble Beginnings",n="Baros Alexston",x=57.7,y=47.9,z="Stormwind City",el=30.1,note="Baros Alexston in Cathedral Square, just outside the Cathedral of Light",opt=true},
     {a="A",q=1653,t="The Test of Righteousness",n="Duthorian Rall",x=50.5,y=47.5,z="Stormwind City",el=30.1,pre={1652},o="Speak to Jordan Stilwell in Ironforge.",note="The Test of Righteousness: its parts need Shadowfang Keep and the Deadmines, but it ends in Verigan's Fist. Take it if you'll run those dungeons",opt=true,class="Paladin"},
-    {a="N",t="Getting to Ashenvale",el=30.1,note="Fly to Menethil Harbor (through Ironforge), take the boat to Auberdine, then fly to Astranaar"},
+    {a="N",t="Getting to Ashenvale",el=30.1,note="Take the boat from Stormwind Harbor to Auberdine, then fly to Astranaar"},
     {a="F",t="Astranaar",el=30.1},
     {a="A",q=4581,t="Kayneth Stillwind",n="Shindrell Swiftfire",x=34.7,y=48.8,z="Ashenvale",el=30.1},
     {a="A",q=1035,t="Fallen Sky Lake",n="Pelturas Whitemoon",x=37.4,y=51.8,z="Ashenvale",el=30.1,sk=0.1,ql=30,pre={1034}},
@@ -56,6 +56,6 @@ SnapGuide:Route({
     {a="T",q=1035,t="Fallen Sky Lake",n="Pelturas Whitemoon",x=37.4,y=51.8,z="Ashenvale",el=31.3,note="Pelturas in Astranaar"},
     {a="T",q=1140,t="The Tower of Althalaxx",n="Delgren the Purifier",x=26.2,y=38.7,z="Ashenvale",el=31.4,o="Free the trapped Highborne souls in Night Run and Satyrnaar, then return to Delgren the Purifier at Maestra's Post.",note="Delgren the Purifier at Maestra's Post, west of Astranaar"},
     {a="C",q=943,t="The Absent Minded Prospector",x=14.2,y=14.0,z="Ashenvale",el=31.4,o="Archaeologist Flagongut in Menethil Harbor wants you to bring him the Stone of Relu and Flagongut's Fossil.",note="Blackfathom Deeps (needs a group): the entrance is in the water at the Zoram Strand, far north-west. Flagongut's Fossil lies inside, and the Stone of Relu drops in there too",opt=true},
-    {a="F",t="Auberdine",el=31.4,note="Then the boat to Menethil Harbor"},
+    {a="F",t="Auberdine",el=31.4,note="Then the boat to Stormwind Harbor, for the Wetlands"},
   },
 })
