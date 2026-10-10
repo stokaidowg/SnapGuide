@@ -687,6 +687,15 @@ local function Create()
   f.note:SetPoint("RIGHT", f, "RIGHT", -6, 0)
   f.note:SetTextColor(0.8, 0.8, 0.8)
 
+  -- shown when the step's NPC can't be found: your choice, nothing is skipped by itself
+  f.skipQuest = Button(f, "Skip quest", "Skip this quest: its later steps, and quests that need it, go too. < brings it back.", function() G:Tick(G.step) end)
+  f.skipQuest:SetWidth(80)
+  f.keepQuest = Button(f, "Keep it", "Hide this warning: the NPC may just be dead or out of sight", function() G:KeepNPC(G.step) end)
+  f.keepQuest:SetWidth(60)
+  f.keepQuest:SetPoint("LEFT", f.skipQuest, "RIGHT", 4, 0)
+  f.skipQuest:Hide()
+  f.keepQuest:Hide()
+
   f.next = {}
   for i = 1, 2 do
     local t = Text(f, 11, "LEFT")
@@ -742,6 +751,8 @@ function G:OnRefresh(route, s)
     f.step.text:SetText("|cff60ff60All routes done!|r")
     f.note:SetText("")
     for i = 1, 2 do f.next[i]:SetText("") end
+    f.skipQuest:Hide()
+    f.keepQuest:Hide()
     UpdateXP(route)
     return
   end
@@ -768,16 +779,29 @@ function G:OnRefresh(route, s)
     note = s.note or ""
     if s.a == "C" and s.o and note == "" then note = s.o end
   end
-  if self.missing[s.key] then
-    note = "|cffff8080" .. s.n .. " isn't here. The server may have removed this quest: press + to skip it (its later steps go too).|r " .. note
+  local missing = self.missing[s.key]
+  if missing then
+    note = "|cffff8080" .. s.n .. " isn't here. The server may have moved or removed them.|r " .. note
   end
   if self.collapsed and (s.a == "C" or s.a == "A") then
     note = "|cffff8080Expand all quest log headers so SnapGuide can see your quests.|r " .. note
   end
   f.note:SetText(note)
 
-  -- the next two steps under the note
+  -- skip or keep, under the note, when the NPC is missing
   local last = f.note
+  if missing then
+    f.skipQuest:ClearAllPoints()
+    f.skipQuest:SetPoint("TOPLEFT", f.note, "BOTTOMLEFT", 0, -5)
+    f.skipQuest:Show()
+    f.keepQuest:Show()
+    last = f.skipQuest
+  else
+    f.skipQuest:Hide()
+    f.keepQuest:Hide()
+  end
+
+  -- the next two steps under the note
   local list = self:Upcoming(route, s, 2)
   for i = 1, 2 do
     local t = f.next[i]
@@ -802,7 +826,7 @@ function G:OnRefresh(route, s)
   end
 
   -- size to fit the note
-  local h = 26 + 22 + 5 + (note ~= "" and f.note:GetHeight() or 0) + 6 + 14 * 2 + 20
+  local h = 26 + 22 + 5 + (note ~= "" and f.note:GetHeight() or 0) + (missing and 23 or 0) + 6 + 14 * 2 + 20
   f:SetHeight(math.max(96, h))
   UpdateXP(route)
 end

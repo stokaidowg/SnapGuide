@@ -539,8 +539,10 @@ end)
 -- been moved or removed (Gowlfang left the Wetlands for Dragonmaw Retreat). Once you've stood
 -- at an accept/turn-in spot for a while, look for the NPC by name; if nobody answers, say so
 -- and offer the skip. Only out of combat and with no target, so nothing you're doing changes.
--- missing[stepKey] = true while that step's NPC couldn't be found
+-- missing[stepKey] = true while that step's NPC couldn't be found; kept[stepKey] = true once
+-- you said to keep the step anyway (no more looking there this session)
 G.missing = {}
+G.kept = {}
 local LOOK_AFTER, LOOK_AGAIN = 15, 30
 local nearFor, lookedAt, nearKey = 0, nil, nil
 
@@ -552,7 +554,7 @@ function G:NPCHere(name)
 end
 
 function G:CheckNPC(s, dt)
-  if not s or (s.a ~= "A" and s.a ~= "T") or not s.n or s.obj or not s.x then return end
+  if not s or (s.a ~= "A" and s.a ~= "T") or not s.n or s.obj or not s.x or self.kept[s.key] then return end
   if s.key ~= nearKey then nearKey, nearFor, lookedAt = s.key, 0, nil end
   local zone, x, y = self:Position()
   if not Near(s, zone, x, y, 1.2) then nearFor = 0 return end
@@ -565,10 +567,18 @@ function G:CheckNPC(s, dt)
     self.missing[s.key] = gone or nil
     if gone then
       G.Print("|cffff8080" .. s.n .. " isn't here.|r The server may have moved or removed them, so " .. s.t ..
-        " may be gone. Press + (or /sg skip) to skip it; its later steps go too.")
+        " may be gone. Skip it from the guide window if you like, or keep it.")
     end
     return true
   end
+end
+
+-- "Keep it": the NPC may just be dead or out of sight; stop warning about this step
+function G:KeepNPC(s)
+  if not s then return end
+  self.kept[s.key] = true
+  self.missing[s.key] = nil
+  self:Refresh()
 end
 
 -- arrival checks run a few times a second
