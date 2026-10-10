@@ -6,7 +6,7 @@
 --
 -- Step fields: a = action (A accept, C complete, T turn in, R go to, F fly, H hearth,
 -- P flight path, S set hearth, B buy, L reach level, G grind, N note), q = quest id,
--- t = title/place, n = NPC, x/y/z = map spot, mobs = targetable names, o = objective text,
+-- t = title/place, n = NPC (obj = n is an object, not an NPC), x/y/z = map spot, mobs = targetable names, o = objective text,
 -- note, opt = optional, class/race = only for that class/race, lvl = level for L steps,
 -- w = do this C step together with the C step before it (shown as one step),
 -- pre = (A steps) quests needed first, el = the level the route expects you to be at this step, sk = (A steps) the quest can be
@@ -534,13 +534,51 @@ events:SetScript("OnEvent", function()
   G:Refresh()
 end)
 
+-- [[ missing NPCs ]] --
+-- The quest database can be older than the server: an NPC the route sends you to may have
+-- been moved or removed (Gowlfang left the Wetlands for Dragonmaw Retreat). Once you've stood
+-- at an accept/turn-in spot for a while, look for the NPC by name; if nobody answers, say so
+-- and offer the skip. Only out of combat and with no target, so nothing you're doing changes.
+-- missing[stepKey] = true while that step's NPC couldn't be found
+G.missing = {}
+local LOOK_AFTER, LOOK_AGAIN = 15, 30
+local nearFor, lookedAt, nearKey = 0, nil, nil
+
+function G:NPCHere(name)
+  TargetByName(name, true)
+  local found = UnitExists("target") and UnitName("target") == name
+  ClearTarget()
+  return found
+end
+
+function G:CheckNPC(s, dt)
+  if not s or (s.a ~= "A" and s.a ~= "T") or not s.n or s.obj or not s.x then return end
+  if s.key ~= nearKey then nearKey, nearFor, lookedAt = s.key, 0, nil end
+  local zone, x, y = self:Position()
+  if not Near(s, zone, x, y, 1.2) then nearFor = 0 return end
+  nearFor = nearFor + dt
+  if nearFor < LOOK_AFTER or (lookedAt and nearFor - lookedAt < LOOK_AGAIN) then return end
+  if UnitAffectingCombat("player") or UnitExists("target") or UnitIsDeadOrGhost("player") then return end
+  lookedAt = nearFor
+  local gone = not self:NPCHere(s.n)
+  if gone ~= (self.missing[s.key] or false) then
+    self.missing[s.key] = gone or nil
+    if gone then
+      G.Print("|cffff8080" .. s.n .. " isn't here.|r The server may have moved or removed them, so " .. s.t ..
+        " may be gone. Press + (or /sg skip) to skip it; its later steps go too.")
+    end
+    return true
+  end
+end
+
 -- arrival checks run a few times a second
 local elapsed = 0
 events:SetScript("OnUpdate", function()
   elapsed = elapsed + arg1
   if elapsed < 0.5 or not db then return end
+  local dt = elapsed
   elapsed = 0
-  if G.route and G.step and G:CheckArrival(G.route, G.step) then
+  if G.route and G.step and (G:CheckArrival(G.route, G.step) or G:CheckNPC(G.step, dt)) then
     G:Refresh()
   end
 end)

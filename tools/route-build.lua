@@ -350,6 +350,7 @@ function Build(spec)
           if op == "A" then
             local n, c, kind = Giver(q.start, zid)
             step.n = n
+            if kind == "O" then step.obj = true end
             if kind == "I" then step.note = step.note or ("Starts from the item " .. tostring(n)) end
             if c then step.x, step.y, step.z = c[1], c[2], c[3] end
             if STATE.done[qid] then warn(lineNo, "accepting " .. qid .. " which is already done") end
@@ -390,8 +391,9 @@ function Build(spec)
             end
             if not flags.opt then AddXP(KillXP(q)) end
           else
-            local n, c = Giver(q["end"], zid)
+            local n, c, kind = Giver(q["end"], zid)
             step.n = n
+            if kind == "O" then step.obj = true end
             if c then step.x, step.y, step.z = c[1], c[2], c[3] end
             if not STATE.log[qid] then warn(lineNo, "turning in " .. qid .. " " .. QName(qid) .. " which isn't in the log") end
             STATE.log[qid] = nil
@@ -505,6 +507,7 @@ function Build(spec)
     end
     if s.note and s.note ~= "" then table.insert(p, "note=" .. lstr(s.note)) end
     if s.opt then table.insert(p, "opt=true") end
+    if s.obj then table.insert(p, "obj=true") end
     if s.w then table.insert(p, "w=true") end
     if s.class then table.insert(p, "class=" .. lstr(s.class)) end
     if s.race then table.insert(p, "race=" .. lstr(s.race)) end

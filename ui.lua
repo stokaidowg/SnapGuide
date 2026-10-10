@@ -768,6 +768,9 @@ function G:OnRefresh(route, s)
     note = s.note or ""
     if s.a == "C" and s.o and note == "" then note = s.o end
   end
+  if self.missing[s.key] then
+    note = "|cffff8080" .. s.n .. " isn't here. The server may have removed this quest: press + to skip it (its later steps go too).|r " .. note
+  end
   if self.collapsed and (s.a == "C" or s.a == "A") then
     note = "|cffff8080Expand all quest log headers so SnapGuide can see your quests.|r " .. note
   end

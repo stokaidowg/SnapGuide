@@ -83,17 +83,15 @@ T 463
 A 276
 # Gowlfang's quests (40679 Reunite Tribe-Tribe!, 40680, 40681) are gone: patch 1.18 moved him into
 # Dragonmaw Retreat as a boss. Grimbite at the camp gives Gowlfang's Defeat (41750) for that
-# dungeon instead; it isn't in the pfQuest-octo database yet.
+# dungeon instead; it isn't in the pfQuest-octo database yet. Bogpaw Truthsay (40683 Dragonkin
+# Annoyance!) went with him: no spawn on octowow.st/db.
 A 40682 | Dagdag Mossbelt at the friendly Mosshide camp, next to the Greenwarden
-A 40683 | Bogpaw Truthsay, same camp. If he isn't there either, skip this: he may have gone to Dragonmaw Retreat with Gowlfang
 C 484 | Young crocolisks along the river by the Green Belt
 C 276 | Mosshide gnolls in the camps south-east of the Green Belt
 T 276
 A 277
-C 40683 | Whelps on the hills east of the Green Belt
 C 40682 | Razormaw raptors on Raptor Ridge, north-east
 T 40682
-T 40683
 C 277 | The Mosshide camps north of Whelgar's Excavation
 C 470 | Black Oozes north of the Mosshide camps
 C 55200 | The same oozes, and Simple Wood lying around @together
