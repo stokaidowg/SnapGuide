@@ -370,6 +370,7 @@ function Build(spec)
               step.sk = math.max(0.01, math.floor(worth * 100 + 0.5) / 100)
               step.ql = q.lvl
             end
+            if q.pre then step.pre = q.pre end
             STATE.log[qid] = true
           elseif op == "C" then
             -- near where the route has you: the last step with coordinates in this zone
@@ -492,6 +493,7 @@ function Build(spec)
     if s.el then table.insert(p, "el=" .. s.el) end
     if s.sk then table.insert(p, "sk=" .. s.sk) end
     if s.ql then table.insert(p, "ql=" .. s.ql) end
+    if s.pre then table.insert(p, "pre={" .. table.concat(s.pre, ",") .. "}") end
     if s.mobs then
       local m = {}
       for _, v in ipairs(s.mobs) do table.insert(m, lstr(v)) end

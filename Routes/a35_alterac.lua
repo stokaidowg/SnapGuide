@@ -8,7 +8,7 @@ SnapGuide:Route({
     {a="H",t="Southshore",el=34.8},
     {a="T",q=512,t="Noble Deaths",n="Magistrate Henry Maleb",x=48.1,y=59.1,z="Hillsbrad Foothills",el=34.8},
     {a="T",q=500,t="Crushridge Bounty",n="Marshal Redpath",x=49.5,y=58.7,z="Hillsbrad Foothills",el=34.9},
-    {a="A",q=504,t="Crushridge Warmongers",n="Marshal Redpath",x=49.5,y=58.7,z="Hillsbrad Foothills",el=34.9,sk=0.16,ql=40,opt=true},
+    {a="A",q=504,t="Crushridge Warmongers",n="Marshal Redpath",x=49.5,y=58.7,z="Hillsbrad Foothills",el=34.9,sk=0.16,ql=40,pre={500},opt=true},
     {a="T",q=661,t="Hints of a New Plague?",n="Phin Odelic",x=50.3,y=59.0,z="Hillsbrad Foothills",el=34.9,o="Find Phin Odelic in Southshore.",note="Phin Odelic, if you finished the plague chain",opt=true},
   },
 })

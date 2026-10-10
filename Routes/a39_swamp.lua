@@ -15,7 +15,7 @@ SnapGuide:Route({
     {a="C",q=40028,t="The Horn of Garek'sa",x=61.0,y=23.4,z="Swamp of Sorrows",el=39.6,o="Find the Horn of Garek'sa for Har Na'lan at the Fallow Sanctuary.",note="The Horn of Garek'sa, north-east"},
     {a="T",q=40029,t="Hunting the Hunters",n="Magtoor",x=26.0,y=31.4,z="Swamp of Sorrows",el=39.7,note="Back at the Lost Ones' camp"},
     {a="T",q=40028,t="The Horn of Garek'sa",n="Har Na'lan",x=24.6,y=31.7,z="Swamp of Sorrows",el=39.7},
-    {a="A",q=40030,t="Noboru the Cudgel",n="Magtoor",x=26.0,y=31.4,z="Swamp of Sorrows",el=39.7,sk=0.08,ql=36,o="Find and slay Noboru the Cudgel, and bring Noboru's Cudgel to Magtoor.",opt=true},
+    {a="A",q=40030,t="Noboru the Cudgel",n="Magtoor",x=26.0,y=31.4,z="Swamp of Sorrows",el=39.7,sk=0.08,ql=36,pre={40029},o="Find and slay Noboru the Cudgel, and bring Noboru's Cudgel to Magtoor.",opt=true},
     {a="C",q=40030,t="Noboru the Cudgel",x=55.7,y=34.4,z="Swamp of Sorrows",el=39.7,mobs={"Noboru the Cudgel"},o="Find and slay Noboru the Cudgel, and bring Noboru's Cudgel to Magtoor.",note="Noboru the Cudgel wanders the middle of the swamp",opt=true},
     {a="T",q=40030,t="Noboru the Cudgel",n="Magtoor",x=26.0,y=31.4,z="Swamp of Sorrows",el=39.7,o="Find and slay Noboru the Cudgel, and bring Noboru's Cudgel to Magtoor.",opt=true},
     {a="T",q=1396,t="Encroaching Wildlife",n="Watcher Biggs",x=26.7,y=59.8,z="Swamp of Sorrows",el=39.8,note="Watcher Biggs"},

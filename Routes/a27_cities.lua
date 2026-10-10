@@ -10,7 +10,7 @@ SnapGuide:Route({
     {a="T",q=6392,t="Return to Brock",n="Brock Stoneseeker",x=37.0,y=47.8,z="Loch Modan",el=27.1,note="Optional: fly to Thelsamar and hand in Return to Brock (free XP)",opt=true},
     {a="R",t="Deeprun Tram",x=76.0,y=51.0,z="Ironforge",el=27.1,note="Take the tram to Stormwind"},
     {a="T",q=1649,t="The Tome of Valor",n="Duthorian Rall",x=50.5,y=47.5,z="Stormwind City",el=27.1,o="Speak to Duthorian Rall in Stormwind.",note="Duthorian Rall in the Cathedral",class="Paladin"},
-    {a="A",q=1650,t="The Tome of Valor",n="Duthorian Rall",x=50.5,y=47.5,z="Stormwind City",el=27.1,o="Find Daphne Stilwell in Westfall.",note="Daphne Stilwell is in Westfall: you'll go there from Duskwood",class="Paladin"},
+    {a="A",q=1650,t="The Tome of Valor",n="Duthorian Rall",x=50.5,y=47.5,z="Stormwind City",el=27.1,pre={1649},o="Find Daphne Stilwell in Westfall.",note="Daphne Stilwell is in Westfall: you'll go there from Duskwood",class="Paladin"},
     {a="T",q=1075,t="A Scroll from Mauren",n="Collin Mauren",x=53.0,y=86.6,z="Stormwind City",el=27.1,note="Collin Mauren in the Mage Quarter"},
     {a="T",q=40568,t="Daydreaming at Night",n="Gakin the Darkbinder",x=39.2,y=85.2,z="Stormwind City",el=27.2,note="Gakin the Darkbinder, in the basement of the Slaughtered Lamb"},
     {a="T",q=55220,t="Robb's Report",n="Master Mathias Shaw",x=78.3,y=70.7,z="Stormwind City",el=27.2,note="Master Mathias Shaw in Old Town. His next quest needs the Stockade dungeon: skip it unless you have a group"},

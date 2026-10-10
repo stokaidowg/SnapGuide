@@ -9,7 +9,7 @@
 -- t = title/place, n = NPC, x/y/z = map spot, mobs = targetable names, o = objective text,
 -- note, opt = optional, class/race = only for that class/race, lvl = level for L steps,
 -- w = do this C step together with the C step before it (shown as one step),
--- el = the level the route expects you to be at this step, sk = (A steps) the quest can be
+-- pre = (A steps) quests needed first, el = the level the route expects you to be at this step, sk = (A steps) the quest can be
 -- skipped when you're ahead of the route, worth sk levels; ql = that quest's level.
 
 SnapGuide = { routes = {}, byId = {} }
@@ -390,11 +390,30 @@ function G:Upcoming(route, from, count)
   return list
 end
 
--- tick or skip the current step by hand
+-- pass over a quest (on = true) or bring it back (on = nil), with the quests that need it
+-- first: their pickups (A steps whose pre-quest it is) can't happen without it
+function G:PassOver(qid, on)
+  if not qid or self:IsDone(qid) then return end
+  if on and self.inLog[qid] then return end
+  db.overskip[qid] = on
+  for _, r in ipairs(self.routes) do
+    for _, st in ipairs(r.steps) do
+      if st.a == "A" and st.pre and st.q ~= qid and (db.overskip[st.q] or false) ~= (on or false) then
+        for _, p in ipairs(st.pre) do
+          if p == qid then self:PassOver(st.q, on) break end
+        end
+      end
+    end
+  end
+end
+
+-- tick or skip the current step by hand. Skipping a pickup you haven't taken passes over the
+-- whole quest (its later steps, and pickups that need it, drop out too).
 function G:Tick(s)
   if not s then return end
   if s.a == "A" or s.a == "C" or s.a == "T" or s.a == "L" or s.a == "S" then
     db.skipped[s.key] = true
+    if s.a == "A" and s.q and not self:Started(nil, s) then self:PassOver(s.q, true) end
   else
     db.ticked[s.key] = true
   end
@@ -411,6 +430,7 @@ function G:Back()
     local s = route.steps[i]
     if db.ticked[s.key] or db.skipped[s.key] then
       db.ticked[s.key], db.skipped[s.key] = nil, nil
+      if s.a == "A" and db.overskip[s.q] then self:PassOver(s.q, nil) end
       break
     elseif s.a == "A" and db.overskip[s.q] and not self:IsDone(s.q) then
       db.overskip[s.q] = nil
